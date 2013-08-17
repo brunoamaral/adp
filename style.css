@@ -37,7 +37,9 @@ body h6 {
 }
 
 .custom nav.navbar a{color:#000;}
-
+.custom nav .container {
+	width:330px;
+}
 .custom .navbar-nav > .active > a,
 .custom .navbar-nav > .active > a:hover,
 .custom .navbar-nav > .active > a:focus, 
@@ -45,7 +47,7 @@ body h6 {
 	background-color: transparent;
 }
 
-.custom header#logo {
+header#logo {
 	background: url('assets/img/logo.png') no-repeat ;
 	margin: 0 auto 0 auto;
 	display: block;
@@ -85,6 +87,7 @@ footer#main{
 footer#main a, 
 footer#main p {color:#a8a8a8;}
 
+/* Sprites for footer */
 .sprite {
 	display: block;
 	float: left;

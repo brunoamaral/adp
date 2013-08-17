@@ -71,10 +71,35 @@ footer#main{
 footer#main a, 
 footer#main p {color:#a8a8a8;}
 
-ul.social-media li{
-	display: inline;
-	list-style-type: none;
+.sprite {
+	display: block;
+	float: left;
+	width:100px;
+}
+.sprite-facebook{
+	background: url('assets/img/social-media.png') no-repeat -1px -4px;
+	padding-left: 25px
 }
 
+.sprite-google{
+	background: url('assets/img/social-media.png') no-repeat -5px -89px;
+	padding-left:25px;
+} 
+
+.sprite-linkedin{
+	background: url('assets/img/social-media.png') no-repeat -5px -172px;
+	padding-left:25px;
+} 
+
+.sprite-rss{
+	background: url('assets/img/social-media.png') no-repeat -5px -253px;
+	padding-left:25px;
+} 
+
+.sprite-twitter{ 
+	background: url('assets/img/social-media.png') no-repeat -5px -335px;
+	padding-left:29px;
+
+} 
 
 

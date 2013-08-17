@@ -65,7 +65,9 @@ header#logo h1{
 body a{
 	color:#9c0c0c;
 }
-
+article p{
+	font-size:16px;
+}
 article img{
 	margin-bottom:45px;
 }

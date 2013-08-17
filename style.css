@@ -86,10 +86,14 @@ footer#main{
 	background-color: #444;
 	height: 90px;
 	padding-top:30px;
+	font-size: 11px;
+	line-height: 21px;
 }
 
 footer#main a, 
 footer#main p {color:#a8a8a8;}
+
+
 
 /* Sprites for footer */
 .sprite {

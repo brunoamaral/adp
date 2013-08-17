@@ -45,9 +45,18 @@ body h6 {
 	background-color: transparent;
 }
 
-#logo {
+.custom header#logo {
+	background: url('assets/img/logo.png') no-repeat ;
 	margin: 0 auto 0 auto;
 	display: block;
+	height: 218px;
+	width: 320px;
+	padding-left: 7px;
+	padding-top: 139px;
+}
+
+header#logo h1{
+	font-size: 16px;
 }
 
 /* Body */

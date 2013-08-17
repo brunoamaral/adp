@@ -51,10 +51,10 @@ header#logo {
 	background: url('assets/img/logo.png') no-repeat ;
 	margin: 0 auto 0 auto;
 	display: block;
-	height: 218px;
-	width: 320px;
-	padding-left: 7px;
-	padding-top: 139px;
+	height: 250px;
+	width: 340px;
+	padding-left: 30px;
+	padding-top: 190px;
 }
 
 header#logo h1{
@@ -86,12 +86,14 @@ footer#main{
 	background-color: #444;
 	height: 90px;
 	padding-top:30px;
-	font-size: 11px;
-	line-height: 21px;
 }
 
 footer#main a, 
-footer#main p {color:#a8a8a8;}
+footer#main p {
+	color:#a8a8a8;
+	font-size: 11px;
+	line-height: 21px;
+}
 
 
 

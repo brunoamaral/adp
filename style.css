@@ -28,7 +28,7 @@ body h6 {
 }
 
 /* Navigation */
-.custom nav.navbar{
+.navbarborder{
 	border-top: 1px solid #000;
 	border-bottom:1px solid #000;
 	border-left: none;
@@ -40,13 +40,14 @@ body h6 {
 
 .custom .navbar-nav > .active > a,
 .custom .navbar-nav > .active > a:hover,
-.custom .navbar-nav > .active > a:focus{
+.custom .navbar-nav > .active > a:focus, 
+.custom .navbar{
 	background-color: transparent;
 }
 
-.custom ul.navbar {
+#logo {
 	margin: 0 auto 0 auto;
-	width: auto;
+	display: block;
 }
 
 /* Body */
@@ -54,6 +55,10 @@ body a{
 	color:#9c0c0c;
 }
 
+article footer{
+	border-top:1px solid #ccc;
+	margin-bottom:30px;
+}
 article .action{
 	color:#000;
 }

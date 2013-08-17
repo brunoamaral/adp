@@ -66,6 +66,10 @@ body a{
 	color:#9c0c0c;
 }
 
+article img{
+	margin-bottom:45px;
+}
+
 article footer{
 	border-top:1px solid #ccc;
 	margin-bottom:30px;

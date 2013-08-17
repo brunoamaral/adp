@@ -5,7 +5,7 @@ Description: Built with awesomeness by DefineGravity.co
 Author: DefineGravity
 Author URI: http://definegravity.co/
 Version: 1.0
-Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu (optional)
+Tags: black, white, single-column, fluid-width
 
 License:
 License URI:
@@ -13,4 +13,68 @@ License URI:
 General comments (optional).
 */
 
+/* Site */
 @import url('assets/css/bootstrap.css');
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+
+body, 
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+	font-family:'Lato', sans-serif;
+}
+
+/* Navigation */
+.custom nav.navbar{
+	border-top: 1px solid #000;
+	border-bottom:1px solid #000;
+	border-left: none;
+	border-right:none;
+	border-radius: 0;
+}
+
+.custom nav.navbar a{color:#000;}
+
+.custom .navbar-nav > .active > a,
+.custom .navbar-nav > .active > a:hover,
+.custom .navbar-nav > .active > a:focus{
+	background-color: transparent;
+}
+
+.custom ul.navbar {
+	margin: 0 auto 0 auto;
+	width: auto;
+}
+
+/* Body */
+body a{
+	color:#9c0c0c;
+}
+
+article .action{
+	color:#000;
+}
+
+article .action .like{}
+article .action .share{}
+
+/* Footer */
+footer#main{
+	background-color: #444;
+	height: 90px;
+	padding-top:30px;
+}
+
+footer#main a, 
+footer#main p {color:#a8a8a8;}
+
+ul.social-media li{
+	display: inline;
+	list-style-type: none;
+}
+
+
+

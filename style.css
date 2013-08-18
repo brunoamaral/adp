@@ -38,8 +38,10 @@ body h6 {
 
 .custom nav.navbar a{color:#000;}
 .custom nav .container {
-	width:330px;
+	max-width:355px;
 }
+
+
 .custom .navbar-nav > .active > a,
 .custom .navbar-nav > .active > a:hover,
 .custom .navbar-nav > .active > a:focus, 

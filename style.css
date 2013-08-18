@@ -82,8 +82,23 @@ article .action{
 	color:#000;
 }
 
-article .action .like{}
-article .action .share{}
+article footer .like{
+	background: url('assets/img/glyphicons/png/glyphicons_012_heart.png') no-repeat 10% 42%;
+	background-size: 35%;
+	padding-left: 20px;
+	height: 20px;
+	width: 100px;
+}
+
+article footer .share{
+	background: url('assets/img/glyphicons/png/glyphicons_308_share_alt.png') no-repeat 10% 42%;
+	background-size: 25%;
+
+	padding-left: 25px;
+	height: 20px;
+	width: 100px;
+	margin-left: 10px;
+}
 
 /* Footer */
 footer#main{

@@ -36,16 +36,16 @@ body h6 {
 	border-radius: 0;
 }
 
-.custom nav.navbar a{color:#000;}
-.custom nav .container {
+nav.navbar a{color:#000;}
+nav .container {
 	max-width:355px;
 }
 
 
-.custom .navbar-nav > .active > a,
-.custom .navbar-nav > .active > a:hover,
-.custom .navbar-nav > .active > a:focus, 
-.custom .navbar{
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus, 
+.navbar{
 	background-color: transparent;
 }
 

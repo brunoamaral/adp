@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="en-GB">
 
@@ -11,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+	<!-- findme -->
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet(); ?>">
-
+	<!-- findme -->
 	<?php wp_head(); ?>
   </head>
 

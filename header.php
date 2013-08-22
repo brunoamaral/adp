@@ -12,7 +12,7 @@
 	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<link rel="stylesheet" type="text/css" href="<?php get_stylesheet(); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet(); ?>">
 
 	<?php wp_head(); ?>
   </head>

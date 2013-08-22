@@ -102,6 +102,14 @@ article footer{
 	margin-bottom:30px;
 	margin-top:55px;
 	display: block;
+	padding-top: 5px;
+	height: 30px;
+
+}
+
+.single-post article footer{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
 }
 article .action{
 	color:#000;

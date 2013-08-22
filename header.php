@@ -8,7 +8,7 @@
 	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!-- findme -->
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet(); ?>">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- findme -->
 	<?php wp_head(); ?>
   </head>

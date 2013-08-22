@@ -38,10 +38,6 @@ body h6 {
 }
 
 nav.navbar a{color:#000;}
-nav .container {
-	max-width:355px;
-}
-
 
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:hover,

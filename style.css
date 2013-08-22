@@ -22,9 +22,14 @@ General comments (optional).
 /**
  body{
 	background-image: url('mock.png');
-	background-position: 53% 0%;
+	background-position: 50% 0%;
+	background-color:rgba(255,0,0,0.9);
 }
 /**/
+
+.container {
+	padding:0;
+}
 
 body, 
 body h1,
@@ -56,15 +61,15 @@ nav.navbar a{color:#000;}
 .navbar-nav > .active > a:focus, 
 .navbar{
 	background-color: transparent;
+	margin-bottom:0;
 }
 
 header#logo {
-	background: url('assets/img/logo.png') no-repeat 0% 33%;
+	background: url('assets/img/logo.png') no-repeat 47% 55%;
 	margin: 0 auto 0 auto;
 	display: block;
-	height: 228px;
-	width: 295px;
-	padding-top:157px;
+	height: 250px;
+	padding-top:170px;
 }
 
 header#logo h1{
@@ -75,9 +80,13 @@ header#logo h1{
 body a{
 	color:#9c0c0c;
 }
+
 article {
-	margin-top:35px;
+	margin-top:55px;
+	margin-bottom:80px;
+	padding-left:20px;
 }
+
 article header h1{
 	font-size:27px;
 }
@@ -92,6 +101,7 @@ article footer{
 	border-top:1px solid #ccc;
 	margin-bottom:30px;
 	margin-top:55px;
+	display: block;
 }
 article .action{
 	color:#000;

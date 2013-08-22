@@ -90,7 +90,7 @@ article {
 article header h1{
 	font-size:27px;
 }
-article p{
+article p, .comments, .comments h2{
 	font-size:16px;
 }
 article img{
@@ -111,10 +111,15 @@ article footer{
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 10px;
 }
+
 article .action{
 	color:#000;
 }
 
+.comments h2{
+	font-weight: bold;
+	font-size: 20px;
+}
 
 /* Footer */
 footer#main{

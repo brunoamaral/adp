@@ -19,11 +19,12 @@ General comments (optional).
 @import url('assets/css/font-awesome.css');
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 
-/* body{
+/**
+ body{
 	background-image: url('mock.png');
 	background-position: 53% 0%;
 }
-*/
+/**/
 
 body, 
 body h1,
@@ -63,6 +64,7 @@ header#logo {
 	display: block;
 	height: 228px;
 	width: 295px;
+	padding-top:157px;
 }
 
 header#logo h1{
@@ -74,7 +76,7 @@ body a{
 	color:#9c0c0c;
 }
 article {
-	margin-top:75px;
+	margin-top:35px;
 }
 article header h1{
 	font-size:27px;
@@ -83,7 +85,7 @@ article p{
 	font-size:16px;
 }
 article img{
-	margin-bottom:50px;
+	margin-bottom:35px;
 }
 
 article footer{

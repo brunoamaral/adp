@@ -44,9 +44,12 @@ get_header();
         </div>
 
 
+     <?php if (have_posts()) : ?>
+               <?php while (have_posts()) : the_post(); ?>    
+               <!-- do stuff ... -->
           <article class="col-md-12 col-md-offset-2 ">
           <header>
-            <h1 class="text-center">Title</h1>
+            <h1 class="text-center"><?php the_title(); ?></h1>
           </header>
           <img class="img-responsive" alt="placeholder" src="http://placekitten.com/740/300">
           <div class="col-sm-14 col-sm-offset-1 col-xs-16">
@@ -55,7 +58,7 @@ get_header();
 
           <div class="clearfix"></div>
             <footer class="col-sm-16">
-            <div class="col-sm-12">January 13<sup>th</sup> 2013 / in <a href="#">A Geek Perspective</a></div>
+            <div class="col-sm-12"><?php the_time('F j'); ?> 13<sup>th</sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(); ?></a></div>
             <div class="col-sm-4 text-right">
 
                 <a type="button" class="dropdown-toggle action like" data-toggle="dropdown">
@@ -80,6 +83,8 @@ get_header();
 
                 </footer>
         </article>
+            <?php endwhile; ?>
+                 <?php endif; ?>
 
       </div>
 

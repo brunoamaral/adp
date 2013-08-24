@@ -51,9 +51,10 @@ get_header();
           <header>
             <h1 class="text-center"><?php the_title(); ?></h1>
           </header>
+          <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
           <img class="img-responsive" alt="placeholder" src="http://placekitten.com/740/300">
           <div class="col-sm-14 col-sm-offset-1 col-xs-16">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <?php the_content(); ?>
           </div>
 
           <div class="clearfix"></div>

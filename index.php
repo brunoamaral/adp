@@ -15,6 +15,9 @@ get_header();
         </div>
 
         <div class="col-md-12 col-md-offset-2">
+
+          <?php wp_nav_menu($config_navigation); ?>
+
         <nav class="navbar navbarborder" role="navigation">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
               <span class="sr-only">Toggle navigation</span>

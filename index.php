@@ -50,7 +50,7 @@ get_header();
                <?php while (have_posts()) : the_post(); ?>    
           <article class="col-md-12 col-md-offset-2 ">
           <header>
-            <h1 class="text-center"><?php the_title(); ?></h1>
+            <h1 class="text-center"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
           </header>
           <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
           <div class="col-sm-14 col-sm-offset-1 col-xs-16">

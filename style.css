@@ -90,6 +90,13 @@ article {
 article header h1{
 	font-size:27px;
 }
+
+article header h1 a, 
+article header h1 a:hover {
+	text-decoration: none;
+	color:#000;
+}
+
 article p, .comments, .comments h2{
 	font-size:16px;
 }

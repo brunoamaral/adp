@@ -1,5 +1,9 @@
 <?php
 
+// configure theme
+add_theme_support( 'post-thumbnails' ); 
+
+
 // navigation menu
 register_nav_menu( 'primary', 'Primary Menu' );
 

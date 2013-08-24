@@ -28,10 +28,11 @@ get_header();
             <div class="collapse navbar-collapse navbar-ex1-collapse">
               <div class="container">
                 <div class="col-md-8 col-md-offset-5 col-sm-8 col-sm-offset-5">
-
+                            <ul class="nav navbar-nav">
                             <?php wp_nav_menu($config_navigation); ?>
+                            </ul>
 
-                <ul class="nav navbar-nav">
+<?Php /*                <ul class="nav navbar-nav">
                   <li><a href="#">About</a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
@@ -43,7 +44,7 @@ get_header();
                       </ul>
                   </li>
                   <li><a href="#">Contact</a></li>
-                </ul>
+                </ul> */?>
               </div>
           </div>
         </nav>

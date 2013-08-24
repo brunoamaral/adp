@@ -58,7 +58,7 @@ get_header();
 
           <div class="clearfix"></div>
             <footer class="col-sm-16">
-            <div class="col-sm-12"><?php the_time('F j'); ?> 13<sup>th</sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(); ?></a></div>
+            <div class="col-sm-12"><?php the_time('F j'); ?> 13<sup>th</sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(''); ?></a></div>
             <div class="col-sm-4 text-right">
 
                 <a type="button" class="dropdown-toggle action like" data-toggle="dropdown">

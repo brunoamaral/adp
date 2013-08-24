@@ -52,7 +52,6 @@ get_header();
             <h1 class="text-center"><?php the_title(); ?></h1>
           </header>
           <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
-          <img class="img-responsive" alt="placeholder" src="http://placekitten.com/740/300">
           <div class="col-sm-14 col-sm-offset-1 col-xs-16">
             <?php the_content(); ?>
           </div>

@@ -17,7 +17,7 @@ $config_navigation = array(
 	'after'           => '',
 	'link_before'     => '',
 	'link_after'      => '',
-	'items_wrap'      => '<li>"%1$s" class="%2$s">%3$s</li>',
+	'items_wrap'      => '<li>%3$s</li>',
 	'depth'           => 0,
 	'walker'          => '');
 

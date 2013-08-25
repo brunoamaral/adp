@@ -123,18 +123,18 @@ class BootstrapNavMenuWalker extends Walker_Nav_Menu {
 
 function adp_header(){
 	?>
-	<div class="col-md-6 col-md-offset-5">
-    	<header id="logo" class="">
+<div class="row">
+    	<header id="logo" class="col-md-offset-5">
         	<h1 class="text-center">Technology and Strategic Communication</h1>
 		</header>
-	</div>
+</div>
 	<?php
 }
 
 function adp_navigation(){
 	?>
-	        <div class="col-md-12 col-md-offset-2">
-	        <nav class="navbar navbarborder" role="navigation">
+	<div class="row">
+	        <nav class="navbar navbarborder col-md-12 col-md-offset-2" role="navigation">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -160,7 +160,7 @@ function adp_navigation(){
           			</div>
      			</div>
         	</nav>
-    	</div>
+</div>
         <?php
 }
 

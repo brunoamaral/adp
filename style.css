@@ -172,3 +172,21 @@ footer#main i {
 
 /* Forms */
 
+form label {
+	font-weight: normal;
+}
+
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"]{
+	border: none;
+	border-radius: 3px 3px;
+	background-color: #00A651;
+	color:#fff;
+	font-weight: normal;
+	font-size: 12px;	
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}

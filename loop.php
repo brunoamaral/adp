@@ -30,7 +30,7 @@
             <div class="col-sm-9 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
             <div class="col-sm-6 text-right pull-right">
 
-              <a class="action">
+              <a class="action" href="<?php the_permalink(); ?>">
                 <i class="icon-comment"></i> <?php comments_number('0'); ?>
               </a>  
                 

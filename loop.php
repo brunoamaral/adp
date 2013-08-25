@@ -11,21 +11,21 @@
 <div class="row">
      <?php if (have_posts()) : ?>
                <?php while (have_posts()) : the_post(); ?>    
-          <article>
+          <article id="post-<?php the_ID(); ?>" <?php post_class( 'post format-standard' ); ?>>
           <header class="col-md-12 col-md-offset-2" >
-            <h1 class="text-center"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+            <h1 class="text-center post-title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
           </header>
           <div class="row">
           <?php the_post_thumbnail('full', array('class' => 'img-responsive col-md-12 col-md-offset-2')); ?>
           </div>
           <div class="row">
-          <div class="col-sm-10 col-sm-offset-3 col-xs-16">
+          <div id="content-<?php the_ID(); ?>" class="col-sm-10 col-sm-offset-3 col-xs-16 entry-content">
             <?php the_content(); ?>
           </div>
           </div>
           <div class="clearfix"></div>
-            <footer class="col-sm-16">
-            <div class="col-sm-12"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
+            <footer class="col-sm-12 col-md-offset-2 post-meta">
+            <div class="col-sm-12 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
             <div class="col-sm-4 text-right">
 
                 <a type="button" class="dropdown-toggle action like" data-toggle="dropdown">

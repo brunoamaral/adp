@@ -123,10 +123,25 @@ article .action{
 	color:#000;
 }
 
+
+/* Comments */
 .comments h2{
 	font-weight: bold;
 	font-size: 20px;
 }
+
+/* jetpack comments doesn't allow for custom css. For that reason we are keeping the form untouched for now. */
+/**
+#respond .form-submit input,
+#respond .form-submit input#comment-submit, 
+#respond .comment-form-fields input[type=submit],
+#respond p.form-submit input[type=submit], 
+#respond input[type=submit], 
+#commentform #submit{
+	border:none;
+	background: #00A651;
+}
+/**/ 
 
 /* Footer */
 footer#main{

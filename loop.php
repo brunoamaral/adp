@@ -17,18 +17,19 @@
           </header>
           
           <div class="row">
-            <?php the_post_thumbnail('full', array('class' => 'img-responsive col-md-12 col-md-offset-2')); ?>
+            <?php the_post_thumbnail('full', array('class' => 'img-responsive col-md-12 col-md-offset-2 col-xs-15')); ?>
           </div>
           
           <div class="row">
-          <div id="content-<?php the_ID(); ?>" class="col-sm-10 col-sm-offset-3 entry-content">
+          <div id="content-<?php the_ID(); ?>" class="col-sm-10 col-sm-offset-3 col-xs-15 entry-content">
             <?php the_content(); ?>
           </div>
           </div>
 
-          <footer class="col-md-12 col-md-offset-2 row post-meta">
-            <div class="col-sm-9 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
-            <div class="col-sm-6 text-right pull-right">
+          <div class="row">
+          <footer class="col-sm-12 col-sm-offset-2 post-meta">
+            <div class="col-sm-9 col-xs-8 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
+            <div class="col-sm-7 col-xs-6 text-right pull-right">
 
               <a class="action" href="<?php the_permalink(); ?>">
                 <i class="icon-comment"></i> <?php comments_number('0'); ?>
@@ -54,7 +55,7 @@
               </ul>
               </div>
             </footer>
-
+            </div>
         </article>
             <?php endwhile; ?>
         <?php endif; ?>

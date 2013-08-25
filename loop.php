@@ -21,7 +21,7 @@
 
           <div class="clearfix"></div>
             <footer class="col-sm-16">
-            <div class="col-sm-12"><?php the_time('F j'); ?><sup><?php the_time(S); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
+            <div class="col-sm-12"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
             <div class="col-sm-4 text-right">
 
                 <a type="button" class="dropdown-toggle action like" data-toggle="dropdown">

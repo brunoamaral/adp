@@ -3,7 +3,7 @@
  * The template for displaying a single post and its related content as well as author boxes. Uses
  * get_post_format to render the appropriate template based on the post's format.
  *
- * @package Standard
+ * @package adp
  * @since 	3.0
  * @version	3.1
  */

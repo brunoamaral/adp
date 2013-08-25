@@ -216,3 +216,13 @@ ol .commentlist li{
 	margin-right: 10px;
 
 }
+
+/* Social buttons by jetpack */
+.sharedaddy .sd-sharing-enabled {
+	font-family: 'Lato', sans-serif;
+	font-size: inherit;
+}
+
+article div.sharedaddy div.sd-block{
+	border-top:none;
+}

@@ -225,4 +225,14 @@ function adp_custom_comment( $comment, $args, $depth ) {
 		</div><!-- /comment-container -->
 <?php } // end adp_custom_comment
 
+// Social links powered by jetpack plugin
+// reference : http://jetpack.me/2013/06/10/moving-sharing-icons/ 
+
+function jptweak_remove_share() {
+    remove_filter( 'the_content', 'sharing_display',19 );
+    remove_filter( 'the_excerpt', 'sharing_display',19 );
+    remove_filter( 'the_content', array( Jetpack_Likes::init(), 'post_likes' ), 30, 1 );
+}
+ 
+add_action( 'loop_end', 'jptweak_remove_share' );
 ?>

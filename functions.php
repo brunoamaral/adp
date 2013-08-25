@@ -2,6 +2,7 @@
 
 // configure theme
 add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'automatic-feed-links' );
 
 
 // navigation menu

@@ -12,7 +12,7 @@
      <?php if (have_posts()) : ?>
                <?php while (have_posts()) : the_post(); ?>    
           <article id="post-<?php the_ID(); ?>" <?php post_class( 'post format-standard' ); ?>>
-          <header class="col-md-12 col-md-offset-2" >
+          <header class="col-sm-12 col-sm-offset-2 post-header" >
             <h1 class="text-center post-title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
           </header>
           <div class="row">

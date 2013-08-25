@@ -12,7 +12,7 @@
 		die ( __( 'This file cannot be loaded directly.', 'standard' ) );
 	} // end if
 ?>
-<div class="col-md-12 col-md-offset-2">
+<div class="">
 <?php if ( post_password_required() ) { ?>
 	<div id="comments">
 		<h3 class="nopassword">This post is password protected. Enter the password to view comments.</h3>

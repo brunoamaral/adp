@@ -121,6 +121,9 @@ article footer{
 
 article .action{
 	color:#000;
+	display: block;
+	width: 70px;
+	float: left;
 }
 
 

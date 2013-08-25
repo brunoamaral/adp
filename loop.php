@@ -28,12 +28,16 @@
 
           <footer class="col-md-12 col-md-offset-2 row post-meta">
             <div class="col-sm-9 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
-            <div class="col-sm-7 text-right">
+            <div class="col-sm-6 text-right pull-right">
 
+              <a class="action">
+                <i class="icon-comment"></i> <?php comments_number('0'); ?>
+              </a>  
+                
               <a type="button" class="dropdown-toggle action like" data-toggle="dropdown">
                    <i class="icon-heart"></i> Like 
               </a>
-                &nbsp; &nbsp; &nbsp;
+                
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">wordpress</a></li>
                 <li><a href="#">facebook</a></li>

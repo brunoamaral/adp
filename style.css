@@ -193,3 +193,21 @@ input[type="reset"]{
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
+/* Comments */
+
+#respond{
+	height: 400px;
+}
+
+
+ol .commentlist li{
+	list-style-type: none;
+}
+
+.avatar-holder{
+	width: 50px;
+	float:left;
+	margin-right: 10px;
+
+}

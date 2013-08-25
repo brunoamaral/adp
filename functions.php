@@ -225,6 +225,24 @@ function adp_custom_comment( $comment, $args, $depth ) {
 		</div><!-- /comment-container -->
 <?php } // end adp_custom_comment
 
+
+function list_pings( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment; ?>
+	<li id="comment-<?php comment_ID(); ?>">
+		<span class="author">
+			<?php comment_author_link(); ?>
+		</span> -
+		<span class="date">
+			<?php echo get_comment_date( get_option( 'date_format' ) ); ?>
+		</span>
+		<span class="pingcontent">
+			<?php comment_text(); ?>
+		</span>
+	</li>
+<?php } // end list_pings
+
+
+
 // Social links powered by jetpack plugin
 // reference : http://jetpack.me/2013/06/10/moving-sharing-icons/ 
 

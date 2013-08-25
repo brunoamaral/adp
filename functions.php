@@ -126,7 +126,7 @@ function adp_header(){
 	?>
 <div class="row">
     	<header id="logo" class="col-md-offset-5">
-        	<h1 class="text-center">Technology and Strategic Communication</h1>
+        	<h1 class="text-center"><a href="<?php bloginfo('wpurl'); ?>">Technology and Strategic Communication</a></h1>
 		</header>
 </div>
 	<?php
@@ -148,10 +148,10 @@ function adp_navigation(){
                             
                             <?php 
                                 $args = array(
-                                  'depth'    => 0,
+                                  'depth'      => 0,
                                   'container'  => false,
-                                  'menu_class'   => 'nav navbar-nav',
-                                  'walker'   => new BootstrapNavMenuWalker()
+                                  'menu_class' => 'nav navbar-nav',
+                                  'walker'     => new BootstrapNavMenuWalker()
                                 );
                          
                                 wp_nav_menu($args);

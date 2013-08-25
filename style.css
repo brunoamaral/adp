@@ -91,8 +91,8 @@ article header h1{
 	font-size:27px;
 }
 
-article header h1 a, 
-article header h1 a:hover {
+h1 a, 
+h1 a:hover {
 	text-decoration: none;
 	color:#000;
 }
@@ -166,4 +166,6 @@ footer#main i {
 	float: left;
 	width:100px;
 }
+
+/* Forms */
 

@@ -2,7 +2,7 @@
 /**
  * The template for displaying standard post formats.
  * 
- * @package Standard
+ * @package adp
  * @since 	3.0
  * @version	3.1
  */
@@ -15,15 +15,15 @@
           <header class="col-sm-12 col-sm-offset-2 post-header" >
             <h1 class="text-center post-title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
           </header>
-          <div class="row">
+
           <?php the_post_thumbnail('full', array('class' => 'img-responsive col-md-12 col-md-offset-2')); ?>
-          </div>
+
           <div class="row">
-          <div id="content-<?php the_ID(); ?>" class="col-sm-10 col-sm-offset-3 col-xs-16 entry-content">
+          <div id="content-<?php the_ID(); ?>" class="col-sm-10 col-sm-offset-3 entry-content">
             <?php the_content(); ?>
           </div>
           </div>
-          <div class="clearfix"></div>
+
             <footer class="col-md-12 col-md-offset-2 row post-meta">
             <div class="col-sm-9 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
             <div class="col-sm-7 text-right">

@@ -161,7 +161,7 @@ function adp_navigation(){
           			</div>
      			</div>
         	</nav>
-</div>
+	</div>
         <?php
 }
 

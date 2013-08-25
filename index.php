@@ -1,8 +1,4 @@
-<?Php
-
-get_header(); 
-
-?>
+<?Php get_header(); ?>
 
   <body <?php body_class(); ?>>
 

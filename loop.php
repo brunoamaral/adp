@@ -10,7 +10,7 @@
 
      <?php if (have_posts()) : ?>
                <?php while (have_posts()) : the_post(); ?>    
-          <article class="col-md-12 col-md-offset-2 ">
+          <article class="col-md-12 col-md-offset-2">
           <header>
             <h1 class="text-center"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
           </header>

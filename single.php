@@ -20,6 +20,11 @@
 
         <?php get_template_part( 'loop', get_post_format() ); ?>
 
+	<div class="col-md-12 col-md-offset-2">
+        <?php comment_form(); ?>
+    </div>
+
+		<?php comments_template( '', true ); ?>	
 
       </div>
 

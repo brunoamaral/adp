@@ -3,6 +3,12 @@
 // configure theme
 add_theme_support( 'post-thumbnails' ); 
 add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'social-links', array(
+    'facebook', 'twitter', 'linkedin', 'tumblr', 'pocket'
+) );
+
+// remove jetpack contact form styles
+//wp_deregister_style('grunion.css');
 
 
 // navigation menu

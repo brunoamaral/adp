@@ -24,9 +24,9 @@
           </div>
           </div>
           <div class="clearfix"></div>
-            <footer class="col-sm-12 col-md-offset-2 post-meta">
-            <div class="col-sm-12 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
-            <div class="col-sm-4 text-right">
+            <footer class="col-md-12 col-md-offset-2 row post-meta">
+            <div class="col-sm-9 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
+            <div class="col-sm-7 text-right">
 
                 <a type="button" class="dropdown-toggle action like" data-toggle="dropdown">
                    <i class="icon-heart"></i> Like

@@ -1,6 +1,7 @@
   <footer id="main">
     <div class="container">
-      <div class="col-9">
+      <div class="row">
+      <div class="col-sm-9 col-xs-16">
 
         <span class="sprite"><i class="icon-facebook icon-large"></i><a href="https://www.facebook.com/brunoamaral">&nbsp;&nbsp;&nbsp;Facebook</a></span>
         <span class="sprite"><i class="icon-twitter icon-large"></i><a href="https://twitter.com/brunoamaral">&nbsp;&nbsp;&nbsp;Twitter</a></span>  
@@ -10,8 +11,9 @@
       
       </div>
       
-      <div class="col-3 pull-right">
+      <div class="col-sm-7 col-xs-16 text-right">
         <p class="muted">&copy; 2013 A Different Perspective</p>
+      </div>
       </div>
     </div>
   </footer>

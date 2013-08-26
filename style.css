@@ -201,10 +201,6 @@ input[type="reset"]{
 
 /* Comments */
 
-#respond{
-	height: 400px;
-}
-
 
 ol .commentlist li{
 	list-style-type: none;

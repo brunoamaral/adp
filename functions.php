@@ -4,8 +4,15 @@
 add_theme_support( 'post-thumbnails' ); 
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'social-links', array(
-    'facebook', 'twitter', 'linkedin', 'tumblr', 'pocket'
+    'facebook', 'twitter', 'linkedin', 'tumblr', 'pocket', 'google-plus', 'email'
 ) );
+
+
+add_action('wp_enqueue_script','register_scripts');
+
+function register_my_scripts(){
+	wp_enqueue_script('jquery');
+}
 
 // remove jetpack contact form styles
 //wp_deregister_style('grunion.css');
@@ -253,7 +260,7 @@ function list_pings( $comment, $args, $depth ) {
 function jptweak_remove_share() {
     remove_filter( 'the_content', 'sharing_display',19 );
     remove_filter( 'the_excerpt', 'sharing_display',19 );
-    remove_filter( 'the_content', array( Jetpack_Likes::init(), 'post_likes' ), 30, 1 );
+//    remove_filter( 'the_content', array( Jetpack_Likes::init(), 'post_likes' ), 30, 1 );
 }
  
 add_action( 'loop_end', 'jptweak_remove_share' );

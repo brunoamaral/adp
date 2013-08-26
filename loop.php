@@ -16,16 +16,14 @@
             <h1 class="text-center post-title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
           </header>
           
-          <div class="row">
-            <?php the_post_thumbnail('full', array('class' => 'img-responsive col-md-12 col-md-offset-2 col-xs-15')); ?>
-          </div>
+            <?php the_post_thumbnail('full', array('class' => 'img-responsive col-sm-14 col-sm-offset-1 col-xs-15')); ?>
           
-          <div class="row">
-          <div id="content-<?php the_ID(); ?>" class="col-sm-10 col-sm-offset-3 col-xs-15 entry-content">
+
+          <div id="content-<?php the_ID(); ?>" class="col-sm-10 col-sm-offset-3 col-md-10 col-md-offset-3 col-xs-15 entry-content">
             <?php the_content(); ?>
           </div>
-          </div>
 
+          <div class="clearfix"></div>
           <div class="row">
           <footer class="col-sm-12 col-sm-offset-2 post-meta">
             <div class="col-sm-9 col-xs-8 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>

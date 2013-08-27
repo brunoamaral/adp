@@ -9,8 +9,11 @@
 ?>
 
 <div class="row">
-     <?php if (have_posts()) : ?>
-               <?php while (have_posts()) : the_post(); ?>    
+     <?php if (have_posts()) : 
+              // set the "paged" parameter (use 'page' if the query is on a static front page)
+              $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+              while (have_posts()) : the_post(); ?>
+
           <article id="post-<?php the_ID(); ?>" <?php post_class( 'post format-standard' ); ?>>
           <header class="col-sm-12 col-sm-offset-2 post-header" >
             <h1 class="text-center post-title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
@@ -69,6 +72,17 @@
             </footer>
             </div>
         </article>
-            <?php endwhile; ?>
+
+        <?php
+          // usage with max_num_pages
+          next_posts_link( 'Older Entries', $the_query->max_num_pages );
+          previous_posts_link( 'Newer Entries' );
+          endwhile;
+
+          <?php 
+          // clean up after our query
+          wp_reset_postdata(); 
+          else:  ?>
+          <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
         <?php endif; ?>
 </div>

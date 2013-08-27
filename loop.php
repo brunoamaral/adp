@@ -74,10 +74,11 @@
         </article>
 
         <?php
+           endwhile;
+           
           // usage with max_num_pages
           next_posts_link( 'Older Entries', $the_query->max_num_pages );
           previous_posts_link( 'Newer Entries' );
-          endwhile;
 
           // clean up after our query
           wp_reset_postdata(); 

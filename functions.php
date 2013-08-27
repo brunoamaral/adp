@@ -279,6 +279,6 @@ function adp_google_analytics(){
 	</script>
 	<?php
 }
-add_action('adp_google_analytics', 'wp_footer');
+add_action('wp_footer', 'adp_google_analytics');
 
 ?>

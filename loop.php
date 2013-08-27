@@ -79,7 +79,6 @@
           previous_posts_link( 'Newer Entries' );
           endwhile;
 
-          <?php 
           // clean up after our query
           wp_reset_postdata(); 
           else:  ?>

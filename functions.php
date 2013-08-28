@@ -155,7 +155,7 @@ function adp_navigation(){
             </button>
             	<div class="collapse navbar-collapse navbar-ex1-collapse">
               		<div class="container">
-                		<div class="col-md-8 col-md-offset-5 col-sm-9 col-sm-offset-4 col-xs-15">
+                		<div class="col-md-8 col-md-offset-5 col-sm-10 col-sm-offset-3 col-xs-15">
                             
                             <?php 
                                 $args = array(

@@ -29,6 +29,7 @@
           <div class="clearfix"></div>
           <div class="row">
           <footer class="col-sm-12 col-sm-offset-2 post-meta">
+
             <div class="col-sm-9 col-xs-8 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <?php the_category(' '); ?></div>
             <div class="col-sm-7 col-xs-6 text-right pull-right">
 

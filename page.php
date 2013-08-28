@@ -32,28 +32,7 @@
           </div>
 
           <footer class="col-md-12 col-md-offset-2 row post-meta">
-            <div class="col-sm-9 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <a href="#"><?php the_category(' '); ?></a></div>
-            <div class="col-sm-7 text-right">
 
-              <a type="button" class="dropdown-toggle action like" data-toggle="dropdown">
-                   <i class="icon-heart"></i> Like 
-              </a>
-                &nbsp; &nbsp; &nbsp;
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">wordpress</a></li>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">google+</a></li>
-              </ul>
-
-              <a type="button" class="dropdown-toggle action share" data-toggle="dropdown">
-                <i class="icon-share-alt"></i> Share
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">twitter</a></li>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">google+</a></li>
-              </ul>
-              </div>
             </footer>
 
         </article>

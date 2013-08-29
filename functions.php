@@ -251,16 +251,7 @@ function list_pings( $comment, $args, $depth ) {
 
 
 
-// Social links powered by jetpack plugin
-// reference : http://jetpack.me/2013/06/10/moving-sharing-icons/ 
 
-function jptweak_remove_share() {
-    remove_filter( 'the_content', 'sharing_display',19 );
-    remove_filter( 'the_excerpt', 'sharing_display',19 );
-  //  remove_filter( 'the_content', array( Jetpack_Likes::init(), 'post_likes' ), 30, 1 );
-}
- 
-add_action( 'loop_end', 'jptweak_remove_share' );
 
 function adp_google_analytics(){
 	?>
@@ -277,5 +268,16 @@ function adp_google_analytics(){
 	<?php
 }
 add_action('wp_footer', 'adp_google_analytics');
+
+// Social links powered by jetpack plugin
+// reference : http://jetpack.me/2013/06/10/moving-sharing-icons/ 
+
+function jptweak_remove_share() {
+    remove_filter( 'the_content', 'sharing_display',19 );
+    remove_filter( 'the_excerpt', 'sharing_display',19 );
+	remove_filter( 'the_content', 'post_likes', 30, 1 );
+}
+
+add_action( 'loop_end', 'jptweak_remove_share' );
 
 ?>

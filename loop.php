@@ -64,9 +64,9 @@
         </article>
 
         <?php
-           endwhile;
+          endwhile;
            
-            posts_nav_link(' &#183; ', 'previous page', 'next page');
+          posts_nav_link(' &#183; ', 'previous page', 'next page');
 
           // clean up after our query
           wp_reset_postdata(); 

@@ -40,23 +40,12 @@
               <a type="button" class="dropdown-toggle action like" data-toggle="dropdown">
                    <i class="icon-heart"></i> Like 
               </a>
-                
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">wordpress</a></li>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">google+</a></li>
-              </ul>
 
               <a type="button" class="dropdown-toggle action share" data-toggle="dropdown">
                 <i class="icon-share-alt"></i> Share
               </a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">twitter</a></li>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">google+</a></li>
-              </ul>
-            
 
+              <div class="dropdown-menu" role="menu">
                 <?php
                 if ( function_exists( 'sharing_display' ) ) {
                     sharing_display( '', true );
@@ -67,7 +56,7 @@
                     echo $custom_likes->post_likes( '' );
                 }
                 ?>
-
+            </div>
 
               </div>
             </footer>
@@ -77,9 +66,7 @@
         <?php
            endwhile;
            
-          // usage with max_num_pages
-          next_posts_link( 'Older Entries', $the_query->max_num_pages );
-          previous_posts_link( 'Newer Entries' );
+            posts_nav_link(' &#183; ', 'previous page', 'next page');
 
           // clean up after our query
           wp_reset_postdata(); 

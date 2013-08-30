@@ -145,7 +145,7 @@ function adp_header(){
 function adp_navigation(){
 	?>
 	<div class="row">
-	        <nav class="navbar navbarborder col-lg-12 col-lg-offset-2 col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-2 col-xs-15" role="navigation">
+	        <nav class="navbar navbarborder col-md-12 col-md-offset-2 col-xs-15" role="navigation">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
               <span class="sr-only">Toggle navigation</span>
               <i class="icon-reorder icon-large"></i>

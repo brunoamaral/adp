@@ -283,4 +283,12 @@ function jptweak_remove_share() {
 
 add_action( 'loop_end', 'jptweak_remove_share' );
 
+add_filter('previous_posts_link_attributes', 'sdac_next_posts_likn_attributes');
+add_filter('next_posts_link_attributes', 'sdac_next_posts_likn_attributes');
+function sdac_next_posts_likn_attributes(){
+	return 'class="btn btn-success"';
+}
+
+
+
 ?>

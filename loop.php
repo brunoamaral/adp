@@ -67,7 +67,11 @@
           endwhile;
            
           if (is_front_page()){
-            posts_nav_link(' &#183; ', 'previous page', 'next page');
+            ?> <div class="row"> <div class="col-md-12">
+            <?php posts_nav_link(' &#183; ', 'previous page', 'next page'); ?>
+            </div>
+          </div>
+          <?php
           }else{
             ?> <div class="row"><div class="col-sm-12 col-sm-offset-2"><?php
             $prev_post = get_adjacent_post(false, '', true);

@@ -22,7 +22,7 @@
             <?php the_post_thumbnail('full', array('class' => 'img-responsive col-md-12 col-md-offset-2 col-xs-15')); ?>
           
 
-          <div id="content-<?php the_ID(); ?>" class="col-sm-10 col-sm-offset-3 col-md-10 col-md-offset-3 col-xs-15 entry-content">
+          <div id="content-<?php the_ID(); ?>" class="col-sm-11 col-sm-offset-2 col-md-10 col-md-offset-3 col-xs-15 entry-content">
             <?php the_content(); ?>
           </div>
 

@@ -66,8 +66,22 @@
         <?php
           endwhile;
            
-          posts_nav_link(' &#183; ', 'previous page', 'next page');
+          if (is_front_page()){
+            posts_nav_link(' &#183; ', 'previous page', 'next page');
+          }else{
+            $prev_post = get_adjacent_post(false, '', true);
+            if(!empty($prev_post)) {
+            ?> <div class="col-md-8"> <?php
+            echo '<a href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '">' . $prev_post->post_title . '</a>'; }
+            ?></div> <?php
 
+            $next_post = get_adjacent_post(false, '', false);
+            if(!empty($next_post)) {
+           ?> <div class="col-md-8"> <?php
+            echo '<a href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">' . $next_post->post_title . '</a>'; 
+            ?></div> <?php
+          }
+          }
           // clean up after our query
           wp_reset_postdata(); 
           else:  ?>

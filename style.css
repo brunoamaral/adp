@@ -112,6 +112,10 @@ article img{
 	margin-bottom:35px;
 }
 
+article .entry-content img{
+	width: 100%;
+}
+
 article footer{
 	border-top:1px solid #ccc;
 	margin-bottom:30px;

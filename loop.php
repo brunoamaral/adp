@@ -69,18 +69,20 @@
           if (is_front_page()){
             posts_nav_link(' &#183; ', 'previous page', 'next page');
           }else{
+            ?> <div class="row"><div class="col-sm-12 col-sm-offset-2"><?php
             $prev_post = get_adjacent_post(false, '', true);
             if(!empty($prev_post)) {
-            ?> <div class="col-md-8"> <?php
-            echo '<a href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '">' . $prev_post->post_title . '</a>'; }
+            ?> <div class="col-md-7 col-md-offset-1 previous_article"> <?php
+            echo '<a class="btn btn-success" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '">Previous Article' . '</a>'; }
             ?></div> <?php
 
             $next_post = get_adjacent_post(false, '', false);
             if(!empty($next_post)) {
-           ?> <div class="col-md-8"> <?php
-            echo '<a href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">' . $next_post->post_title . '</a>'; 
-            ?></div> <?php
+           ?> <div class="col-md-7 text-right next_article"> <?php
+            echo '<a class="btn btn-success" href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">Next Article' . '</a>'; 
+            ?></div></div> <?php
           }
+          ?></div><?php
           }
           // clean up after our query
           wp_reset_postdata(); 

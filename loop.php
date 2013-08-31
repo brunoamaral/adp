@@ -34,7 +34,7 @@
             <div class="col-sm-6 col-sm-offset-0 col-xs-6 text-right article_actions">
 
               <a class="action" href="<?php the_permalink(); ?>">
-                <i class="icon-comment"></i> <?php comments_number('0'); ?>
+                <i class="icon-comment"></i> <?php comments_number('0', '1', '%'); ?>
               </a>  
                 
               <a type="button" class="dropdown-toggle action like" data-toggle="dropdown">

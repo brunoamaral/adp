@@ -31,7 +31,7 @@
           <footer class="col-sm-12 col-sm-offset-2 post-meta">
 
             <div class="col-sm-8 col-sm-offset-1 col-xs-8 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <?php the_category(' '); ?></div>
-            <div class="col-sm-6 col-sm-offset-1 col-xs-6 text-right pull-right">
+            <div class="col-sm-6 col-sm-offset-0 col-xs-6 text-right article_actions">
 
               <a class="action" href="<?php the_permalink(); ?>">
                 <i class="icon-comment"></i> <?php comments_number('0'); ?>

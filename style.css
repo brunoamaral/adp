@@ -122,6 +122,14 @@ article footer{
 
 }
 
+article footer div.meta-date-cat{
+	padding-left: 22px;
+}
+
+article footer .article_actions{
+	padding-left: 40px;
+}
+
 .single-post article footer{
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 10px;

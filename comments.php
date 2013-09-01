@@ -49,15 +49,14 @@
 				<?php wp_list_comments( 'type=pings&callback=list_pings&per_page=-1' ); ?>
 			</ol>
 		</div><!-- /#pings -->
-	<?php } // end if ?>	
-	
-<?php } else { ?>
+	<?php } // end if 
 
-	<?php if( comments_open() ) { ?>
+	} else {
+
+	if( comments_open() ) { ?>
 		<div id="no-comments" class="">
 			<h3 class="title">Be the first to start the conversation.</h3>
 		</div><!-- /#no-comments -->
-	<?php } // end if ?>
-	
-<?php } // end if ?>
+	<?php } // end if 
+	} // end if ?>
 </div>

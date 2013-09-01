@@ -21,17 +21,17 @@
         <?php get_template_part( 'loop', get_post_format() ); ?>
 
       	<div class="col-md-10 col-md-offset-3">
-      		<?php $args = array('id_submit' => 'custom_submit' ); ?>
-              <?php comment_form($args); ?>
+      		<?php 
+            $args = array('id_submit' => 'custom_submit' );
+            comment_form($args); 
+          ?>
         </div>
 
        	 <?php comments_template( '', true ); ?>	
       
       </div>
 
-
-	<?php get_footer(); ?>
-
+      <?php get_footer(); ?>
 
   </body>
 </html>

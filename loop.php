@@ -63,39 +63,52 @@
             </div>
         </article>
 
-        <?php
-          endwhile;
+        <?php endwhile; ?>
+      
+      <div class="row">
            
-          if (is_front_page()){
-            ?> <div class="row"> <div class="col-md-12 col-sm-offset-2">
-            <div class="pull-right"><?php previous_posts_link('Newer articles &raquo;') ?></div>
-            <div class="pull-left"><?php next_posts_link('&laquo; Older articles','') ?></div>
-            </div>
-          </div>
+      <?php
+        if (is_front_page()){
+      ?> 
+
+                <div class="col-md-12 col-sm-offset-2">
+                  <div class="pull-right"><?php previous_posts_link('Newer articles &raquo;') ?></div>
+                  <div class="pull-left"><?php next_posts_link('&laquo; Older articles','') ?></div>
+                </div>
+              
           <?php
           }else{
-            ?> 
-              <div class="row">
-                <div class="col-sm-12 col-sm-offset-2"><?php
-            $prev_post = get_adjacent_post(false, '', true);
-            if(!empty($prev_post)) {
-            ?> 
-                  <div class="col-md-7 col-md-offset-1 previous_article"> <?php
-            echo '<a class="btn btn-success" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '">Previous Article' . '</a>'; }
             ?>
-                  </div> <?php
+              <div class="col-sm-12 col-sm-offset-2">
+                <?php
+                $prev_post = get_adjacent_post(false, '', true);
+                if(!empty($prev_post)) {
+                ?> 
+                <div class="col-md-7 col-md-offset-1 previous_article">
+                  <?php
+                  echo '<a class="btn btn-success" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '">Previous Article' . '</a>'; }
+                  ?>
+                </div> 
+                <?php
+                $next_post = get_adjacent_post(false, '', false);
+                if(!empty($next_post)) {
+                 ?> 
+                <div class="col-md-7 text-right next_article">
+                  <?php
+                  echo '<a class="btn btn-success" href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">Next Article' . '</a>'; 
+                  ?>
+                </div>
+                <?php
+                }
+                ?>
+              </div>
+          <?php
+          }
+          ?>
 
-            $next_post = get_adjacent_post(false, '', false);
-            if(!empty($next_post)) {
-           ?> 
-                  <div class="col-md-7 text-right next_article"> <?php
-            echo '<a class="btn btn-success" href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">Next Article' . '</a>'; 
-            ?>
-                  </div>
-              </div> <?php
-          }
-          ?></div><?php
-          }
+      </div>
+          
+          <?php
           // clean up after our query
           wp_reset_postdata(); 
           else:  ?>

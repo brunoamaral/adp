@@ -23,7 +23,7 @@
     <?php 
     if ( is_single() ){ ?>
     <script type="text/javascript">
-    var $head = jQuery("iframe").contents().find("head");                
+    var $head = jQuery("iframe#jetpack_remote_comment").contents().find("head");                
     $head.append($("<link/>", 
     { rel: "stylesheet", href: "<?php echo get_stylesheet_directory_uri(); ?>/assets/css/iframe.css", type: "text/css" }));
     </script>

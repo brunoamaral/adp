@@ -67,8 +67,9 @@
           endwhile;
            
           if (is_front_page()){
-            ?> <div class="row"> <div class="col-md-12">
-            <?php posts_nav_link(' &#183; ', 'previous page', 'next page'); ?>
+            ?> <div class="row"> <div class="col-md-12 col-sm-offset-2">
+            <div class="pull-right"><?php previous_posts_link('Newer articles &raquo;') ?></div>
+            <div class="pull-left"><?php next_posts_link('&laquo; Older articles','') ?></div>
             </div>
           </div>
           <?php

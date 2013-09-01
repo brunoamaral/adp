@@ -20,6 +20,18 @@
   
     <?php wp_footer(); ?> 
 
+    <?php 
+    if ( is_single() ){ ?>
+    <script type="text/javascript">
+    var $head = $("iframe").contents().find("head");                
+    $head.append($("<link/>", 
+    { rel: "stylesheet", href: "<?php echo get_stylesheet_directory_uri(); ?>/assets/css/iframe.css", type: "text/css" }));
+    </script>
+
+    <?php
+    }
+    ?>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/bootstrap.js"></script>
 

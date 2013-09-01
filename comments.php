@@ -7,23 +7,25 @@
  * @version	3.0
  */
 ?>
+
+<div class="col-md-10 col-md-offset-3">
 <?php 
 	if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && 'comments.php' == basename( $_SERVER['SCRIPT_FILENAME'] ) ) {
 		die ( __( 'This file cannot be loaded directly.', 'standard' ) );
 	} // end if
 ?>
-<div class="col-md-10 col-md-offset-3">
+
 
 <?php if ( post_password_required() ) { ?>
 	<div id="comments">
 		<h3 class="nopassword">This post is password protected. Enter the password to view comments.</h3>
 	</div><!-- #comments -->
-	<?php return; ?>
-<?php } // end if	?>
+	<?php return; 
+	 } // end if	
 
-<?php if ( have_comments() ) { ?>
+	if ( have_comments() ) { 
 
-	<?php if ( ! empty( $comments_by_type['comment'] ) ) { ?>
+		if ( ! empty( $comments_by_type['comment'] ) ) { ?>
 		<div id="comments" class="">
 			<h3><?php comments_number( 'No coments', 'One comment', '% comments' );?> to <em><?php the_title(); ?></em></h3>
 			<ol class="commentlist">
@@ -38,9 +40,9 @@
 				</div>
 			</div>
 		</div><!-- /#comments -->
-	<?php } // end if ?>
+	<?php } // end if 
 
-	<?php if ( ! empty( $comments_by_type['pings'] ) ) { ?>
+		if ( ! empty( $comments_by_type['pings'] ) ) { ?>
 		<div id="pings">
 			<h3> Trackbacks and Pingbacks: </h3>
 			<ol class="pinglist">
@@ -58,5 +60,4 @@
 	<?php } // end if ?>
 	
 <?php } // end if ?>
-
 </div>

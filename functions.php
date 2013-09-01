@@ -249,10 +249,7 @@ function list_pings( $comment, $args, $depth ) {
 	</li>
 <?php } // end list_pings
 
-
-
-
-
+// add google analytics
 function adp_google_analytics(){
 	?>
 	<script type="text/javascript">

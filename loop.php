@@ -74,18 +74,25 @@
           </div>
           <?php
           }else{
-            ?> <div class="row"><div class="col-sm-12 col-sm-offset-2"><?php
+            ?> 
+              <div class="row">
+                <div class="col-sm-12 col-sm-offset-2"><?php
             $prev_post = get_adjacent_post(false, '', true);
             if(!empty($prev_post)) {
-            ?> <div class="col-md-7 col-md-offset-1 previous_article"> <?php
+            ?> 
+                  <div class="col-md-7 col-md-offset-1 previous_article"> <?php
             echo '<a class="btn btn-success" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '">Previous Article' . '</a>'; }
-            ?></div> <?php
+            ?>
+                  </div> <?php
 
             $next_post = get_adjacent_post(false, '', false);
             if(!empty($next_post)) {
-           ?> <div class="col-md-7 text-right next_article"> <?php
+           ?> 
+                  <div class="col-md-7 text-right next_article"> <?php
             echo '<a class="btn btn-success" href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">Next Article' . '</a>'; 
-            ?></div></div> <?php
+            ?>
+                  </div>
+              </div> <?php
           }
           ?></div><?php
           }

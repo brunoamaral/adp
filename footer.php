@@ -33,10 +33,14 @@
     ?>
     
     <script>
-    jQuery("a.trigger_search").click(function () {
+    jQuery("a.trigger_search").toggle(function () {
       jQuery("form.search-form").fadeIn(3000);
       return false;
-    });
+    },
+      function(){
+        jQuery("form.search-form").fadeTo(400, 0);
+      }
+    );
     </script>
 
 

@@ -6,6 +6,7 @@ add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'social-links', array(
     'facebook', 'twitter', 'linkedin', 'tumblr', 'pocket', 'google-plus', 'email'
 ) );
+add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
 
 
 add_action('wp_enqueue_script','register_scripts');

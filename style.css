@@ -197,10 +197,15 @@ footer#main i {
 
 /* Forms */
 
+.search-form{
+	margin-top:5px;
+}
+
 form label {
 	font-weight: normal;
 }
 
+/**
 input[type="button"], 
 input[type="submit"], 
 input[type="reset"]{
@@ -215,6 +220,7 @@ input[type="reset"]{
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+/**/ 
 
 /* Comments */
 

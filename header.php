@@ -15,3 +15,7 @@
   </head>
 
   <body <?php body_class(); ?>>
+
+  	<div class="col-md-3 pull-right text-right search-form">
+  		<?php get_search_form(); ?>
+  	</div>

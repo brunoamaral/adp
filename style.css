@@ -129,7 +129,6 @@ article footer .article_actions{
 }
 
 .single-post article footer{
-	border-bottom: 1px solid #ccc;
 	padding-bottom: 10px;
 }
 
@@ -141,6 +140,11 @@ article .action{
 }
 
 article .action .comments{
+}
+
+
+.blog_navigation{
+	border: 1px solid #ccc;
 }
 
 .previous_article{

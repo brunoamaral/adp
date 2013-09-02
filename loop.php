@@ -71,7 +71,7 @@
         if (is_front_page()){
       ?> 
 
-                <div class="col-md-12 col-sm-offset-2">
+                <div class="col-md-12 col-sm-offset-2 blog_navigation">
                   <div class="pull-right"><?php previous_posts_link('Newer &raquo;') ?></div>
                   <div class="pull-left"><?php next_posts_link('&laquo; Older','') ?></div>
                 </div>

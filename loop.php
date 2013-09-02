@@ -71,7 +71,7 @@
         if (is_front_page()){
       ?> 
 
-                <div class="col-md-12 col-sm-offset-2 blog_navigation">
+                <div class="col-md-12 col-sm-offset-2">
                   <div class="pull-right"><?php previous_posts_link('Newer &raquo;') ?></div>
                   <div class="pull-left"><?php next_posts_link('&laquo; Older','') ?></div>
                 </div>
@@ -79,7 +79,7 @@
           <?php
           }else{
             ?>
-              <div class="col-sm-12 col-sm-offset-2">
+              <div class="col-sm-12 col-sm-offset-2 blog_navigation">
                 <?php
                 $prev_post = get_adjacent_post(false, '', true);
                 if(!empty($prev_post)) {

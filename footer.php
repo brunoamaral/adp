@@ -34,7 +34,7 @@
     
     <script>
     jQuery("a.trigger_search").click(function () {
-      $("form.search-form").fadeIn(3000);
+      jQuery("form.search-form").fadeIn(3000);
       return false;
     });
     </script>

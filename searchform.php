@@ -4,8 +4,7 @@
 	<label>
 		<div class="input-group">
 			<span class="sr-only">Search for:</span>
-
-			<input type="search" class="search-field form-control" placeholder="Search …" value="" name="s" title="Search for:" />
+			<input type="search" class="search-field form-control" placeholder="Press enter to search" value="" name="s" title="Search for:" />
 		</div>
 	</label>
 </form>

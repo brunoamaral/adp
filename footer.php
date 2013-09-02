@@ -32,5 +32,14 @@
     }
     ?>
     
+    <script>
+    $("a.trigger_search").click(function () {
+      $("form.search-form").fadeIn(3000);
+      return false;
+    });
+    </script>
+
+
+
   </body>
 </html>

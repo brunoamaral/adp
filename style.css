@@ -209,6 +209,10 @@ form label {
 	font-weight: normal;
 }
 
+form.search-form{
+	display: none;
+}
+
 /**
 input[type="button"], 
 input[type="submit"], 

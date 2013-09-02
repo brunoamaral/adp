@@ -72,8 +72,8 @@
       ?> 
 
                 <div class="col-md-12 col-sm-offset-2">
-                  <div class="pull-right"><?php previous_posts_link('Newer articles &raquo;') ?></div>
-                  <div class="pull-left"><?php next_posts_link('&laquo; Older articles','') ?></div>
+                  <div class="pull-right"><?php previous_posts_link('Newer &raquo;') ?></div>
+                  <div class="pull-left"><?php next_posts_link('&laquo; Older','') ?></div>
                 </div>
               
           <?php
@@ -86,7 +86,7 @@
                 ?> 
                 <div class="col-md-7 col-md-offset-1 previous_article">
                   <?php
-                  echo '<a class="btn btn-success" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '">Previous Article' . '</a>'; }
+                  echo '<a class="btn btn-success" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '">Older' . '</a>'; }
                   ?>
                 </div> 
                 <?php
@@ -95,7 +95,7 @@
                  ?> 
                 <div class="col-md-7 text-right next_article">
                   <?php
-                  echo '<a class="btn btn-success" href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">Next Article' . '</a>'; 
+                  echo '<a class="btn btn-success" href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">Newer' . '</a>'; 
                   ?>
                 </div>
                 <?php

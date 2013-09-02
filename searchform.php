@@ -1,4 +1,4 @@
-<a class="Trigger_search" href="#"><i class="icon-search"></i></a>
+<a class="trigger_search" href="#"><i class="icon-search"></i></a>
 
 <form role="search" method="get" class="form-inline search-form" action="<?php echo home_url( '/' ); ?>">
 	<label>

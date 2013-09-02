@@ -201,18 +201,29 @@ footer#main i {
 
 /* Forms */
 
-.search-form{
-	margin-top:5px;
-}
-
 form label {
 	font-weight: normal;
 }
 
 form.search-form{
 	display: none;
+	position:absolute;
 }
 
+input.search-field {
+	border: none;
+	height: 226px;
+	font-size: 46px;
+	opacity: 0.95;
+}
+
+
+/* sizes for the search form */
+.search-form .input-group{
+	width: 700px;
+}
+
+ 
 /**
 input[type="button"], 
 input[type="submit"], 

@@ -16,6 +16,8 @@
 
   <body <?php body_class(); ?>>
 
-  	<div class="col-md-3 pull-right text-right search-form">
-  		<?php get_search_form(); ?>
-  	</div>
+<div class="container">
+    <div class="col-md-12 col-md-offset-2 search-form">
+      <?php get_search_form(); ?>
+    </div>
+</div>

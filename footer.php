@@ -32,13 +32,13 @@
     }
     ?>
     
-    <script>
+    <script type="text/javascript">
+    // fade in and fade out the search form
     jQuery("a.trigger_search").toggle(function () {
-      jQuery("form.search-form").fadeIn(3000);
-      return false;
+      jQuery("form.search-form").fadeIn(400);
     },
       function(){
-        jQuery("form.search-form").fadeTo(3000);
+        jQuery("form.search-form").fadeOut(400);
       }
     );
     </script>

@@ -38,7 +38,7 @@
       return false;
     },
       function(){
-        jQuery("form.search-form").fadeTo(400);
+        jQuery("form.search-form").fadeTo(3000);
       }
     );
     </script>

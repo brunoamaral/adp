@@ -229,12 +229,12 @@ input.search-field {
 /* sizes for the search form */
 
 @media (min-width: 600px) {
-	.search-form .input-group { width: 670px;
+	.search-form .search-field { width: 670px;
   }
 }
 
 @media (min-width: 992px) {
-	.search-form .input-group{ width:720px;
+	.search-form .search-field{ width:720px;
 	}
 }
 

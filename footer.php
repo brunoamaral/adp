@@ -23,8 +23,7 @@
     <?php 
     if ( is_single() ){ ?>
     <script type="text/javascript">
-    jQuery("iframe#jetpack_remote_comment").contents().find("head").append($("<link/>", 
-    { rel: "stylesheet", href: "<?php echo get_stylesheet_directory_uri(); ?>/assets/css/iframe.css", type: "text/css" }));
+    jQuery("iframe#jetpack_remote_comment").contents().find('input').css("display", "none !important");
     </script>
 
     <?php

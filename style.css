@@ -26,6 +26,11 @@ article .entry-content img {
 	max-width: 100%;
 }
 
+.trigger_search{
+	text-decoration: none;
+	color:#ccc;
+}
+
 /**
  body{
 	background-image: url('mock.png');

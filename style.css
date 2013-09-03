@@ -73,12 +73,18 @@ header#logo {
 	background: url('assets/img/logo.png') no-repeat 47% 55%;
 	margin: 0 auto 0 auto;
 	display: block;
-	height: 250px;
-	padding-top:170px;
 }
 
 header#logo h1{
 	font-size: 16px;
+}
+
+header#logo h1 a{
+	height: 200px;
+	width: 400px;
+	margin: 0 auto 0 auto;
+	display: block;
+	padding-top:165px;
 }
 
 /* Body */

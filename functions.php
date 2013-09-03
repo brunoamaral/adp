@@ -15,7 +15,7 @@ add_filter( 'embed_defaults', 'adp_embed_size' );
 function adp_embed_size()
 {
     // adjust these pixel values to your needs
-    return array( 'width' => 590 );
+    return array( 'width' => 590, 'height' => 480 );
 }
 
 add_action('wp_enqueue_script','register_scripts');

@@ -20,11 +20,10 @@ General comments (optional).
 @import url('assets/css/font-awesome.css');
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 
-
 img { max-width: none }
+
 article .entry-content img {
 	max-width: 100%;
-
 }
 
 /**
@@ -223,8 +222,15 @@ input.search-field {
 
 
 /* sizes for the search form */
-.search-form .input-group{
-	width: 700px;
+
+@media (min-width: 600px) {
+	.search-form .input-group { width: 670px;
+  }
+}
+
+@media (min-width: 992px) {
+	.search-form .input-group{ width:720px;
+	}
 }
 
  

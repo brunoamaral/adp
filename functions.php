@@ -8,6 +8,7 @@ add_theme_support( 'social-links', array(
 ) );
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
 
+if ( ! isset( $content_width ) ) $content_width = 590;
 
 add_action('wp_enqueue_script','register_scripts');
 

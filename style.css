@@ -26,7 +26,8 @@ article .entry-content img {
 	max-width: 100%;
 }
 
-.trigger_search{
+a.trigger_search, 
+a.trigger_search:hover {
 	text-decoration: none;
 	color:#ccc;
 }

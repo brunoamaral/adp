@@ -18,6 +18,9 @@ function adp_embed_size()
     return array( 'width' => 590, 'height' => 480 );
 }
 
+add_image_size( 'featured-image', 700, auto, false ); ?>
+
+
 add_action('wp_enqueue_script','register_scripts');
 
 function register_my_scripts(){

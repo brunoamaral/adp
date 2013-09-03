@@ -83,7 +83,9 @@ get_header(); ?>
 		        </article>
 
 			<?php endwhile; ?>
-
+			<div class="col-md-12 col-sm-offset-2">
+            	<?php blog_navigation(); ?>
+            </div>
 
 		<?php else : ?>
 		nothing found

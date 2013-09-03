@@ -21,7 +21,11 @@ General comments (optional).
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 
 
-img { max-width: none; }
+img { max-width: none }
+article .entry-content img {
+	max-width: 100%;
+
+}
 
 /**
  body{

@@ -293,6 +293,11 @@ function sdac_next_posts_likn_attributes(){
 	return 'class="btn btn-success"';
 }
 
-
+function blog_navigation(){
+	?>
+        	<div class="pull-right"><?php previous_posts_link('Newer &raquo;') ?></div>
+        	<div class="pull-left"><?php next_posts_link('&laquo; Older','') ?></div>
+	<?php
+}
 
 ?>

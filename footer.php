@@ -36,6 +36,7 @@
     // fade in and fade out the search form
     jQuery("a.trigger_search").toggle(function () {
       jQuery("form.search-form").fadeIn(400);
+      jQuery('input.search-field').focus();
     },
       function(){
         jQuery("form.search-form").fadeOut(400);

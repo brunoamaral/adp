@@ -10,8 +10,6 @@
 ?>
 <?php get_header(); ?>
 
-  	  <div class="container">
-
   	  	<?php adp_header(); ?>
 
         <?php adp_navigation(); ?>
@@ -27,6 +25,4 @@
 
        	 <?php comments_template( '', true ); ?>	
       
-      </div>
-
-      <?php get_footer(); ?>
+<?php get_footer(); ?>

@@ -9,7 +9,7 @@
 ?>
 <?Php get_header(); ?>
 
-    <div class="container">
+
 
         <?php adp_header(); ?>
 
@@ -38,6 +38,4 @@
                   <?php endif; ?>
           </div>
     
-    </div>
-
 <?php get_footer(); ?>

@@ -26,12 +26,6 @@ article .entry-content img {
 	max-width: 100%;
 }
 
-a.trigger_search, 
-a.trigger_search:hover {
-	text-decoration: none;
-	color:#ccc;
-}
-
 /**
  body{
 	background-image: url('mock.png');
@@ -223,7 +217,6 @@ input.search-field {
 	border: none;
 	height: 226px;
 	font-size: 46px;
-	opacity: 0.95;
 }
 
 
@@ -238,6 +231,13 @@ input.search-field {
 	.search-form .input-group{ width:720px;
 	}
 }
+
+a.trigger_search, 
+a.trigger_search:hover {
+	text-decoration: none;
+	color:#333;
+}
+
 
  
 /**

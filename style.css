@@ -227,9 +227,9 @@ input.search-field {
 
 /* sizes for the search form */
 
-@media (min-width: 480px){
+@media (min-width: 400px){
 	.search-form input[type="search"]{
-		width: 480px;
+		width: 400px;
 		font-size: 30px;
 	}
 }

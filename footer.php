@@ -20,16 +20,6 @@
   
     <?php wp_footer(); ?> 
 
-    <?php 
-    if ( is_single() ){ ?>
-    <script type="text/javascript">
-    jQuery("iframe#jetpack_remote_comment").contents().find('input').css("display", "none !important");
-    </script>
-
-    <?php
-    }
-    ?>
-    
     <script type="text/javascript">
     // fade in and fade out the search form
     jQuery("a.trigger_search").toggle(function () {

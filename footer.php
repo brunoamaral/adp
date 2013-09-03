@@ -38,7 +38,7 @@
     );
     </script>
 
-</div><?php // end opacity div container ?>
+
 
   </body>
 </html>

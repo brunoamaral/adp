@@ -16,7 +16,7 @@ function register_my_scripts(){
 }
 
 function adp_scripts(){
-wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/assets/js/bootstrap.js', array(), '3.0', true );
+wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', array(), '3.0', true );
 wp_enqueue_script('respond', get_stylesheet_directory_uri() . '/assets/js/respond.min.js', array(), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'adp_scripts' );

@@ -71,6 +71,7 @@ header#logo {
 	background: url('assets/img/logo.png') no-repeat 47% 55%;
 	margin: 0 auto 0 auto;
 	display: block;
+	overflow:hidden;
 }
 
 header#logo h1{

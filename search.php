@@ -33,8 +33,12 @@ get_header(); ?>
 		          <?php if ( has_post_thumbnail() ){
 						the_post_thumbnail('thumbnail', array('class' => 'img-responsive col-sm-4 col-sm-offset-2 col-xs-15'));
 					}else{
+					
+					$category = get_the_category(); 
+
 					?>
-					<img src="http://placekitten.com/300/300" class="img-responsive col-sm-4 col-sm-offset-2 col-xs-15">
+
+					<img src="/assets/img/category/<?php echo $category->slug; ?>" class="img-responsive col-sm-4 col-sm-offset-2 col-xs-15">
 					<?php
 				}
 				?>

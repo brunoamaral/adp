@@ -227,22 +227,25 @@ input.search-field {
 
 /* sizes for the search form */
 
-@media (min-width: 400px){
-	.search-form input[type="search"]{
-		width: 400px;
-		font-size: 30px;
+
+.search-form input[type="search"]{
+		width: 100%;
+		min-width: 350px;
+		font-size: 24px;
 	}
-}
+
 
 @media (min-width: 550px) {
-	.search-form input[type="search"]{ width: 670px;
+	.search-form input[type="search"]{ 
+		width: 670px;
 		font-size: 36px;
   }
 }
 
 @media (min-width: 720px) {
-	.search-form input[type="search"]{ width:720px;
-	font-size: 46px;
+	.search-form input[type="search"]{ 
+		width:720px;
+		font-size: 46px;
 	}
 }
 

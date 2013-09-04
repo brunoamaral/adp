@@ -312,4 +312,18 @@ function blog_navigation(){
 	<?php
 }
 
+// add featured image to rss feed
+
+function featured_image_in_feed( $content ) {
+    global $post;
+    if( is_feed() ) {
+        if ( has_post_thumbnail( $post->ID ) ){
+            $output = get_the_post_thumbnail( $post->ID, 'featured-image');
+            $content = $output . $content;
+        }
+    }
+    return $content;
+}
+add_filter( 'the_content_feed', 'featured_image_in_feed' );
+
 ?>

@@ -38,7 +38,7 @@ get_header(); ?>
 
 					?>
 
-					<img src="/assets/img/category/<?php get_template_directory(); echo $category[0]->slug; ?>.png" class="img-responsive col-sm-4 col-sm-offset-2 col-xs-15">
+					<img src="<?php get_stylesheet_directory(); ?>/assets/img/category/<?php echo $category[0]->slug; ?>.png" class="img-responsive col-sm-4 col-sm-offset-2 col-xs-15">
 					<?php
 				}
 				?>

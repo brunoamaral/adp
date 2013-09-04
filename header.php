@@ -9,8 +9,10 @@
 	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 
 	
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
 	<?php wp_head(); ?>
   </head>
 

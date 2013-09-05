@@ -127,6 +127,10 @@ article footer{
 
 }
 
+body.search-results article footer{
+	margin-top:0;
+}
+
 article footer div.meta-date-cat{
 	padding-left: 22px;
 }

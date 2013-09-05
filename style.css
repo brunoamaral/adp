@@ -227,12 +227,6 @@ div.search-form	{
 	font-size: 16px;
 }
 
-input.search-field {
-	border: none;
-	height: 226px;
-}
-
-
 /* sizes for the search form */
 
 
@@ -240,6 +234,12 @@ input.search-field {
 		width: 100%;
 		min-width: 350px;
 		font-size: 24px;
+		border:none;
+		box-shadow: none;
+		-webkit-box-shadow:none;
+		border: none;
+		height: 150px;
+
 	}
 
 

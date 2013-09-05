@@ -222,6 +222,11 @@ form.search-form{
 	position:absolute;
 }
 
+div.search-form	{
+	padding-top: 10px;
+	font-size: 16px;
+}
+
 input.search-field {
 	border: none;
 	height: 226px;

@@ -28,20 +28,19 @@ get_header(); ?>
 		          <article id="post-<?php the_ID(); ?>" <?php post_class( 'post format-standard' ); ?>>
 				
 					<div class="row">
+
 		          		<header class="post-header col-md-9 pull-right" >
 		            		<h1 class="text-center post-title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 		          		</header>
 
 		          	<div id="content-<?php the_ID(); ?>" class="col-md-9 entry-content entry-content">
 			          <?php if ( has_post_thumbnail() ){
-							the_post_thumbnail('thumbnail', array('class' => 'img-responsive col-md-3 col-md-offset-2'));
+							the_post_thumbnail('thumbnail', array('class' => 'img-responsive'));
 						}else{
 						
 						$category = get_the_category(); 
-
 						?>
-
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/category/<?php echo $category[0]->slug; ?>.png" class="img-responsive col-md-3 col-md-offset-2" width="150" >
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/category/<?php echo $category[0]->slug; ?>.png" class="img-responsive" width="150" >
 						<?php
 					}
 					?>

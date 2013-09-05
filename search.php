@@ -29,11 +29,11 @@ get_header(); ?>
 				
 					<div class="row">
 
-		          		<header class="post-header col-md-9 pull-right" >
+		          		<header class="post-header col-md-7 col-md-push-6" >
 		            		<h1 class="text-center post-title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 		          		</header>
 
-		          	<div id="content-<?php the_ID(); ?>" class="col-md-9 entry-content entry-content">
+		          	<div id="content-<?php the_ID(); ?>" class="entry-content entry-content col-md-3 col-md-offset-2 col-md-pull-6">
 			          <?php if ( has_post_thumbnail() ){
 							the_post_thumbnail('thumbnail', array('class' => 'img-responsive'));
 						}else{

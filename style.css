@@ -24,16 +24,6 @@ article .entry-content img {
 	max-width: 100%;
 }
 
-/**
- body{
-	background-image: url('mock.png');
-	background-position: 50% 0%;
-	background-color:rgba(255,0,0,0.9);
-}
-/**/
-
-
-
 body, 
 body h1,
 body h2,
@@ -68,7 +58,7 @@ nav.navbar a{color:#000;}
 }
 
 header#logo {
-	background: url('assets/img/logo.png') no-repeat 47% 55%;
+	background: url('assets/img/logo.png') no-repeat 48% 55%;
 	margin: 0 auto 0 auto;
 	display: block;
 	overflow:hidden;
@@ -124,7 +114,6 @@ article footer{
 	display: block;
 	padding-top: 5px;
 	height: 30px;
-
 }
 
 body.search-results article footer{
@@ -149,10 +138,6 @@ article .action{
 	min-width: 70px;
 	float: left;
 }
-
-article .action .comments{
-}
-
 
 .blog_navigation{
 	border-top: 1px solid #ccc;
@@ -185,18 +170,6 @@ article .action .comments{
 ol.commentlist{
 	list-style-type: none;
 }
-/* jetpack comments doesn't allow for custom css. For that reason we are keeping the form untouched for now. */
-/**
-#respond .form-submit input,
-#respond .form-submit input#comment-submit, 
-#respond .comment-form-fields input[type=submit],
-#respond p.form-submit input[type=submit], 
-#respond input[type=submit], 
-#commentform #submit{
-	border:none;
-	background: #00A651;
-}
-/**/ 
 
 /* Footer */
 footer#main{
@@ -225,7 +198,6 @@ footer#main i {
 }
 
 /* Forms */
-
 form label {
 	font-weight: normal;
 }
@@ -241,8 +213,6 @@ div.search-form	{
 }
 
 /* sizes for the search form */
-
-
 .search-form input[type="search"]{
 		width: 100%;
 		min-width: 350px;
@@ -252,14 +222,12 @@ div.search-form	{
 		-webkit-box-shadow:none;
 		border: none;
 		height: 150px;
-
-	}
-
+}
 
 @media (min-width: 550px) {
 	.search-form input[type="search"]{ 
 		width: 670px;
-		font-size: 36px;
+		font-size: 42px;
   }
 }
 
@@ -276,28 +244,7 @@ a.trigger_search:hover {
 	color:#333333;
 }
 
-
- 
-/**
-input[type="button"], 
-input[type="submit"], 
-input[type="reset"]{
-	border: none;
-	border-radius: 3px 3px;
-	background-color: #00A651;
-	color:#fff;
-	font-weight: normal;
-	font-size: 12px;	
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-/**/ 
-
 /* Comments */
-
-
 ol .commentlist li, 
 ul.children li {
 	list-style-type: none;

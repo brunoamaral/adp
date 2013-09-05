@@ -28,38 +28,7 @@
 
           <div class="clearfix"></div>
           <div class="row">
-          <footer class="col-sm-12 col-sm-offset-2 post-meta">
-
-            <div class="col-sm-8 col-sm-offset-1 col-xs-8 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <?php the_category(' '); ?></div>
-            <div class="col-sm-6 col-sm-offset-0 col-xs-6 text-right article_actions">
-
-              <a class="action" href="<?php the_permalink(); ?>">
-                <i class="icon-comment"></i> <?php comments_number('0', '1', '%'); ?>
-              </a>  
-                
-              <a type="button" class="dropdown-toggle action like" data-toggle="dropdown">
-                   <i class="icon-heart"></i> Like 
-              </a>
-
-              <a type="button" class="dropdown-toggle action share" data-toggle="dropdown">
-                <i class="icon-share-alt"></i> Share
-              </a>
-
-              <div class="dropdown-menu" role="menu">
-                <?php
-                if ( function_exists( 'sharing_display' ) ) {
-                    sharing_display( '', true );
-                }
-                 
-                if ( class_exists( 'Jetpack_Likes' ) ) {
-                    $custom_likes = new Jetpack_Likes;
-                    echo $custom_likes->post_likes( '' );
-                }
-                ?>
-            </div>
-
-              </div>
-            </footer>
+              <?php article_footer(); ?>
             </div>
         </article>
 

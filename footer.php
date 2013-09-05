@@ -24,17 +24,23 @@
     <script type="text/javascript">
     // fade in and fade out the search form
     jQuery("a.trigger_search").toggle(function () {
-    jQuery("form.search-form").fadeIn(400)
-    jQuery('input.search-field').focus();
-
-    jQuery(".opacity").fadeTo("slow", 0.4);
-    jQuery("header#logo").fadeTo("slow", 0.1);
-    },
-      function(){
+      jQuery("form.search-form").fadeIn(400)
+      jQuery('input.search-field').focus();
+      jQuery(".opacity").fadeTo("slow", 0.4);
+      jQuery("header#logo").fadeTo("slow", 0.1);
+      
+      jQuery(document).click( function(){
         jQuery("form.search-form").fadeOut(400);
         jQuery(".opacity").fadeTo("slow", 1);
         jQuery("header#logo").fadeTo("slow", 1);
       }
+        );
+    },
+    function(){
+      jQuery("form.search-form").fadeOut(400);
+      jQuery(".opacity").fadeTo("slow", 1);
+      jQuery("header#logo").fadeTo("slow", 1);
+    }
     );
     </script>
 

@@ -19,17 +19,20 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="col-md-12 col-md-offset-2 page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'adp' ), get_search_query() ); ?></h1>
+				<h1 class="page-title text-center"><?php printf( __( 'Search Results for: %s', 'adp' ), get_search_query() ); ?></h1>
 			</header>
 
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 		          <article id="post-<?php the_ID(); ?>" <?php post_class( 'post format-standard' ); ?>>
-		          <header class="post-header col-sm-12 col-sm-offset-2" >
-		            <h1 class="text-center post-title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-		          </header>
-		          <div class="row">
+				
+					<div class="row">
+		          		<header class="post-header col-md-9 pull-right" >
+		            		<h1 class="text-center post-title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+		          		</header>
+
+		          	<div id="content-<?php the_ID(); ?>" class="col-md-9 entry-content entry-content">
 			          <?php if ( has_post_thumbnail() ){
 							the_post_thumbnail('thumbnail', array('class' => 'img-responsive col-md-3 col-md-offset-2'));
 						}else{
@@ -42,9 +45,6 @@ get_header(); ?>
 						<?php
 					}
 					?>
-			          
-			          <div id="content-<?php the_ID(); ?>" class="col-sm-11 col-md-9 entry-content entry-content">
-			            <?php the_excerpt(); ?>
 			          </div>
 		          </div>
 

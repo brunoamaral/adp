@@ -52,7 +52,7 @@
                 ?> 
                 <div class="col-md-7 col-md-offset-1 previous_article">
                   <?php
-                  echo '<a class="btn btn-success" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '">Older' . '</a>'; }
+                  echo '<a class="btn btn-default" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '"><i class="icon-chevron-left"></i> Older' . '</a>'; }
                   ?>
                 </div> 
                 <?php
@@ -61,7 +61,7 @@
                  ?> 
                 <div class="col-md-7 text-right next_article">
                   <?php
-                  echo '<a class="btn btn-success" href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">Newer' . '</a>'; 
+                  echo '<a class="btn btn-default" href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">Newer <i class="icon-chevron-right"></i>' . '</a>'; 
                   ?>
                 </div>
                 <?php

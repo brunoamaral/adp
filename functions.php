@@ -302,13 +302,13 @@ add_action( 'loop_end', 'jptweak_remove_share' );
 add_filter('previous_posts_link_attributes', 'sdac_next_posts_likn_attributes');
 add_filter('next_posts_link_attributes', 'sdac_next_posts_likn_attributes');
 function sdac_next_posts_likn_attributes(){
-	return 'class="btn btn-success"';
+	return 'class="btn btn-default"';
 }
 
 function blog_navigation(){
 	?>
-        	<div class="pull-right"><?php previous_posts_link('Newer &raquo;') ?></div>
-        	<div class="pull-left"><?php next_posts_link('&laquo; Older','') ?></div>
+        	<div class="pull-right"><?php previous_posts_link('Newer <i class="icon-chevron-right"></i>') ?></div>
+        	<div class="pull-left"><?php next_posts_link('<i class="icon-chevron-left"></i> Older','') ?></div>
 	<?php
 }
 

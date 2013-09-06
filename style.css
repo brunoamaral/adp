@@ -37,6 +37,10 @@ body h6 {
 h1,h2,h3{
 	margin-bottom: 17px;
 }
+
+.container.opacity{
+	overflow: hidden;
+}
 /* Navigation */
 
 .navbarborder{

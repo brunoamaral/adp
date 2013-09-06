@@ -1,7 +1,11 @@
 </div>
-  <footer id="main" class="container">
+
+  <footer id="main" class="">
+ <div class="container">
+
       <div class="row">
-        <div class="col-md-9">
+
+      <div class="col-md-9">
 
           <span class="sprite"><i class="icon-facebook icon-large"></i><a href="https://www.facebook.com/brunoamaral">&nbsp;&nbsp;&nbsp;Facebook</a></span>
           <span class="sprite"><i class="icon-twitter icon-large"></i><a href="https://twitter.com/brunoamaral">&nbsp;&nbsp;&nbsp;Twitter</a></span>  
@@ -9,13 +13,14 @@
           <span class="sprite"><i class="icon-linkedin icon-large"></i><a href="http://linkedin.com/in/brunoamaral">&nbsp;&nbsp;&nbsp;Linkedin</a></span>
           <span class="sprite"><i class="icon-rss icon-large"></i><a href="http://www.brunoamaral.eu/feed">&nbsp;&nbsp;&nbsp;RSS Feed</a></span>
       
-        </div>
+      </div>
       
         <div class="col-md-7 text-right">
           <p class="muted">&copy; 2013 A Different Perspective</p>
         </div>
       </div>
   </footer>
+  </div>
   
     <?php wp_footer(); ?> 
 

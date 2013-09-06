@@ -143,9 +143,10 @@ article .action{
 	float: left;
 }
 
-article .action a:hover{
+article a.action:hover{
 	text-decoration: none;
 	color:#9c0c0c;
+	cursor: pointer;
 }
 
 .blog_navigation{

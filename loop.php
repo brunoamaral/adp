@@ -39,20 +39,20 @@
       <?php
         if (is_front_page()){
           ?>
-              <div class="col-md-12 col-sm-offset-2">
+              <div class="col-md-12 col-md-offset-2">
                 <?php blog_navigation(); ?>
               </div>
       <?php
         }else{
             ?>
-              <div class="col-sm-12 col-sm-offset-2 blog_navigation">
+              <div class="col-md-12 col-md-offset-2 blog_navigation">
                 <?php
                 $prev_post = get_adjacent_post(false, '', true);
                 if(!empty($prev_post)) {
                 ?> 
                 <div class="col-md-7 col-md-offset-1 previous_article">
                   <?php
-                  echo '<a class="btn btn-default" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '"><i class="icon-chevron-left"></i> Older' . '</a>'; }
+                  echo '<a class="btn btn-default btn-black" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '"><i class="icon-chevron-left"></i> Older' . '</a>'; }
                   ?>
                 </div> 
                 <?php
@@ -61,7 +61,7 @@
                  ?> 
                 <div class="col-md-7 text-right next_article">
                   <?php
-                  echo '<a class="btn btn-default" href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">Newer <i class="icon-chevron-right"></i>' . '</a>'; 
+                  echo '<a class="btn btn-default btn-black" href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">Newer <i class="icon-chevron-right"></i>' . '</a>'; 
                   ?>
                 </div>
                 <?php

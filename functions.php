@@ -153,11 +153,11 @@ class BootstrapNavMenuWalker extends Walker_Nav_Menu {
 
 function adp_header(){
 	?>
-<div class="row">
+
     	<header id="logo" class="col-md-16">
         	<h1 class="text-center"><a href="<?php bloginfo('wpurl'); ?>">Technology and Strategic Communication</a></h1>
 		</header>
-</div>
+
 	<?php
 }
 
@@ -328,10 +328,10 @@ add_filter( 'the_content_feed', 'featured_image_in_feed' );
 
 function article_footer(){
 	?>
-	          <footer class="col-sm-12 col-sm-offset-2 post-meta">
+	          <footer class="col-md-12 col-md-offset-2 post-meta">
 
-            <div class="col-sm-8 col-sm-offset-1 col-xs-8 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <?php the_category(' '); ?></div>
-            <div class="col-sm-6 col-sm-offset-0 col-xs-6 text-right article_actions">
+            <div class="col-md-8 col-md-offset-1 col-xs-8 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <?php the_category(' '); ?></div>
+            <div class="col-md-6 col-md-offset-0 col-xs-6 text-right article_actions">
 
               <a class="action" href="<?php the_permalink(); ?>">
                 <i class="icon-comment"></i> <?php comments_number('0', '1', '%'); ?>

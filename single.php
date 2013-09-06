@@ -22,7 +22,7 @@
             comment_form($args); 
           ?>
         </div>
-
+        <a name="comments"></a>
        	 <?php comments_template( '', true ); ?>	
       
 <?php get_footer(); ?>

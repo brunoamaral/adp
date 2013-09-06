@@ -143,6 +143,11 @@ article .action{
 	float: left;
 }
 
+article .action a:hover{
+	text-decoration: none;
+	color:#9c0c0c;
+}
+
 .blog_navigation{
 	border-top: 1px solid #ccc;
 }

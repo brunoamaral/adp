@@ -60,10 +60,6 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<header class="col-sm-10 col-sm-offset-3 page-header">
-				<h1 class="page-title"><?php printf( __( 'Nothing found for: %s', 'adp' ), get_search_query() ); ?></h1>
-			</header>
-
 			<div class="col-md-10 col-md-offset-3">
 				<p class="lead">I am sorry, I couldn't find what you are looking for.</p>
 				<p class="lead">You can try two things now. One is to search again, the other is to send me a tweet and I will try to help.</p>

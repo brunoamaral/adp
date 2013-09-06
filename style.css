@@ -20,9 +20,7 @@ General comments (optional).
 
 img { max-width: none }
 
-article .entry-content img {
-	max-width: 100%;
-}
+article .entry-content img { max-width: 100%;}
 
 body, 
 body h1,
@@ -34,13 +32,14 @@ body h6 {
 	font-family:'Lato', sans-serif;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3{
 	margin-bottom: 17px;
 }
 
-.container.opacity{
-	overflow: hidden;
-}
+.container.opacity{ overflow: hidden;}
+
 /* Navigation */
 
 .navbarborder{
@@ -68,9 +67,7 @@ header#logo {
 	overflow:hidden;
 }
 
-header#logo h1{
-	font-size: 16px;
-}
+header#logo h1{ font-size: 16px; }
 
 header#logo h1 a{
 	height: 200px;
@@ -81,17 +78,12 @@ header#logo h1 a{
 }
 
 /* Body */
-body a{
-	color:#9c0c0c;
-}
 
-article {
-	margin-top:55px;
-}
+body a{ color:#9c0c0c; }
 
-article header h1{
-	font-size:27px;
-}
+article { margin-top:55px; }
+
+article header h1{ font-size:27px; }
 
 h1 a, 
 h1 a:hover {
@@ -104,12 +96,14 @@ article p{
     hyphens: auto;
     text-align: justify;
 }
-article p, .comments, .comments h2{
+
+article p, 
+.comments,
+.comments h2{
 	font-size:16px;
 }
-article img{
-	margin-bottom:35px;
-}
+
+article img{ margin-bottom:35px; }
 
 article footer{
 	border-top:1px solid #ccc;
@@ -120,23 +114,15 @@ article footer{
 	height: 30px;
 }
 
-body.search-results article footer{
-	margin-top:0;
-}
+body.search-results article footer{ margin-top:0; }
 
-article footer div.meta-date-cat{
-	padding-left: 22px;
-}
+article footer div.meta-date-cat{ padding-left: 22px; }
 
-article footer .article_actions{
-	padding-left: 40px;
-}
+article footer .article_actions{ padding-left: 40px; }
 
-.single-post article footer{
-	padding-bottom: 10px;
-}
+.single-post article footer{ padding-bottom: 10px;}
 
-article .action{
+article .action{ 
 	color:#000;
 	display: block;
 	min-width: 70px;
@@ -149,17 +135,11 @@ article a.action:hover{
 	cursor: pointer;
 }
 
-.blog_navigation{
-	border-top: 1px solid #ccc;
-}
+.blog_navigation{ border-top: 1px solid #ccc; }
 
-.previous_article{
-	padding-left: 9px;
-}
+.previous_article{ padding-left: 9px; }
 
-.next_article {
-	padding-right: 9px;
-}
+.next_article{ padding-right: 9px;}
 
 .btn-default {
 	color:#333;
@@ -173,13 +153,9 @@ article a.action:hover{
 	font-size: 20px;
 }
 
-#comments h3{
-	margin-bottom: 50px;
-}
+#comments h3{ margin-bottom: 50px; }
 
-ol.commentlist{
-	list-style-type: none;
-}
+ol.commentlist{ list-style-type: none; }
 
 /* Footer */
 footer#main{
@@ -196,9 +172,7 @@ footer#main p {
 	line-height: 21px;
 }
 
-footer#main i {
-	color:#fff;
-}
+footer#main i { color:#fff; }
 
 .sprite {
 	display: block;
@@ -207,9 +181,7 @@ footer#main i {
 }
 
 /* Forms */
-form label {
-	font-weight: normal;
-}
+form label { font-weight: normal; }
 
 form.search-form{
 	display: none;
@@ -263,8 +235,8 @@ ul.children li {
 	width: 50px;
 	float:left;
 	margin-right: 10px;
-
 }
+
 code {
  white-space: pre-wrap;       /* css-3 */
  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -283,9 +255,7 @@ div.sharedaddy,
 	font-size: inherit;
 }
 
-article div.sharedaddy div.sd-block{
-	border-top:none;
-}
+article div.sharedaddy div.sd-block{ border-top:none; }
 
 /** hide the smiley face **/
 

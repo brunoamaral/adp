@@ -154,7 +154,7 @@ class BootstrapNavMenuWalker extends Walker_Nav_Menu {
 function adp_header(){
 	?>
 <div class="row">
-    	<header id="logo" class="col-md-offset-5">
+    	<header id="logo" class="col-md-16">
         	<h1 class="text-center"><a href="<?php bloginfo('wpurl'); ?>">Technology and Strategic Communication</a></h1>
 		</header>
 </div>

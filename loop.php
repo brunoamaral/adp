@@ -19,7 +19,7 @@
             <h1 class="text-center post-title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
           </header>
           
-            <?php the_post_thumbnail('featured-image', array('class' => 'img-responsive col-md-12 col-md-offset-2')); ?>
+            <?php the_post_thumbnail('featured-image', array('class' => 'img-responsive col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-2')); ?>
           
 
           <div id="content-<?php the_ID(); ?>" class="col-sm-11 col-sm-offset-2 col-md-10 col-md-offset-3 entry-content">

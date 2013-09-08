@@ -9,12 +9,6 @@
 ?>
 <?Php get_header(); ?>
 
-
-
-        <?php adp_header(); ?>
-
-        <?php adp_navigation(); ?>
-
           <div class="row">
                <?php if (have_posts()) : ?>
                          <?php while (have_posts()) : the_post(); ?>    

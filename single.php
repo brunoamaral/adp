@@ -10,10 +10,6 @@
 ?>
 <?php get_header(); ?>
 
-  	  	<?php adp_header(); ?>
-
-        <?php adp_navigation(); ?>
-
         <?php get_template_part( 'loop', get_post_format() ); ?>
 
       	<div class="col-md-10 col-md-offset-3">

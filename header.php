@@ -25,3 +25,7 @@
 </div>
 
 <div class="container opacity">
+
+        <?php adp_header(); ?>
+
+        <?php adp_navigation(); ?>

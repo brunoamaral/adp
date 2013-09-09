@@ -92,6 +92,11 @@ article { margin-top:55px; }
 
 article header h1{ font-size:27px; }
 
+article header h1 a:hover{ 
+	font-weight:bold;
+	text-decoration:underline;
+}
+
 h1 a, 
 h1 a:hover {
 	text-decoration: none;

@@ -20,6 +20,11 @@ General comments (optional).
 
 img { max-width: none }
 
+.nav .caret {
+border-top-color: #000;
+border-bottom-color: #000;
+}
+
 article .entry-content img { max-width: 100%;}
 
 body, 

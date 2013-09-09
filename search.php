@@ -10,10 +10,6 @@
 get_header(); ?>
 
 
-        <?php adp_header(); ?>
-
-        <?php adp_navigation(); ?>
-
         <div class="row">
 
 		<?php if ( have_posts() ) : ?>

@@ -22,7 +22,7 @@
             <?php the_post_thumbnail('featured-image', array('class' => 'img-responsive col-sm-16 col-md-12 col-md-offset-2 wp-post-image')); ?>
           
 
-          <div id="content-<?php the_ID(); ?>" class="col-sm-offset-3 col-sm-10 col-md-10 col-md-offset-3 entry-content">
+          <div id="content-<?php the_ID(); ?>" class="col-sm-offset-2 col-sm-12 col-md-10 col-md-offset-3 entry-content">
             <?php the_content(); ?>
           </div>
 

@@ -171,13 +171,13 @@ function adp_navigation(){
             </button>
             	<div class="collapse navbar-collapse navbar-ex1-collapse">
               		<div class="container">
-                		<div class="center_nav">
+                		<div class="col-md-8 col-md-offset-4">
                    
                             <?php 
                                 $args = array(
                                   'depth'      => 0,
                                   'container'  => false,
-                                  'menu_class' => 'nav navbar-nav',
+                                  'menu_class' => 'nav nav-justified',
                                   'walker'     => new BootstrapNavMenuWalker()
                                 );
                          

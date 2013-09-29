@@ -5,6 +5,7 @@
   	<meta name="description" content="<?php bloginfo('description');?>">
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="twitter:account_id" content="1486070040" />
 
 	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 

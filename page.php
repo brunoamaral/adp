@@ -23,9 +23,11 @@
                     </div>
                     </div>
 
-                    <footer class="col-md-12 col-md-offset-2 row post-meta">
+              <div class="clearfix"></div>
+              <div class="row">
+                <?php article_footer(); ?>
+              </div>
 
-                    </footer>
 
                   </article>
                       <?php endwhile; ?>

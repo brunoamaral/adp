@@ -71,6 +71,11 @@ nav.navbar a{color:#000;}
 	min-height: 40px;
 }
 
+.mobilesearch{
+    padding-top: 16px;
+    display: block;
+}
+
 header#logo {
 	background: url('assets/img/logo.png') no-repeat 48% 55%;
 	margin: 0 auto 0 auto;

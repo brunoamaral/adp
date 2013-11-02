@@ -34,7 +34,14 @@ wp_enqueue_script('respond', get_stylesheet_directory_uri() . '/assets/js/respon
 add_action( 'wp_enqueue_scripts', 'adp_scripts' );
 
 
+
+
 // navigation menu
+function search_trigger(){
+	?><a class="trigger_search" href="#"><i class="icon-search"></i> Search</a><?php
+}
+
+
 register_nav_menu( 'primary', 'Primary Menu' );
 
 /**
@@ -165,13 +172,16 @@ function adp_navigation(){
 	?>
 	<div class="row">
 	        <nav class="navbar navbarborder col-md-12 col-md-offset-2 navbar_fixheight" role="navigation">
+
+       	 	<div class="visible-xs col-xs-4 mobilesearch"><?php search_trigger(); ?></div>
+
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
               <span class="sr-only">Toggle navigation</span>
               <i class="icon-reorder icon-large"></i>
             </button>
             	<div class="collapse navbar-collapse navbar-ex1-collapse">
               		<div class="col-sm-8 col-sm-offset-4">
-                	 
+
                             <?php 
                                 $args = array(
                                   'depth'      => 0,

@@ -1,4 +1,4 @@
-<a class="trigger_search" href="#"><i class="icon-search"></i> Search</a>
+<div class="hidden-xs"><?php search_trigger(); ?></div>
 
 <form role="search" method="get" class="form-inline search-form" action="<?php echo home_url( '/' ); ?>">
 	

@@ -67,6 +67,10 @@ nav.navbar a{color:#000;}
 	margin-bottom:0;
 }
 
+.navbar_fixheight{
+	min-height: 40px;
+}
+
 header#logo {
 	background: url('assets/img/logo.png') no-repeat 48% 55%;
 	margin: 0 auto 0 auto;

@@ -170,9 +170,8 @@ function adp_navigation(){
               <i class="icon-reorder icon-large"></i>
             </button>
             	<div class="collapse navbar-collapse navbar-ex1-collapse">
-              		<div class="container">
-                		<div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4">
-                   
+              		<div class="col-sm-8 col-sm-offset-4">
+                	 
                             <?php 
                                 $args = array(
                                   'depth'      => 0,
@@ -184,7 +183,6 @@ function adp_navigation(){
                                 wp_nav_menu($args);
                              ?>
 
-              			</div>
           			</div>
      			</div>
         	</nav>

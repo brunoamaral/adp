@@ -342,16 +342,13 @@ function article_footer(){
 
             <div class="col-md-8 col-md-offset-1 col-xs-8 meta-date-cat"><?php the_time('F j'); ?><sup><?php the_time('S'); ?></sup> <?php the_time('Y'); ?> / in <?php the_category(' '); ?></div>
             <div class="col-md-6 col-md-offset-0 col-xs-6 text-right article_actions">
-
  			<?php 
           		$meta_type = 'post';
                 $object_id = $post->ID;
                 $meta_key = 'sharing_disabled';
                 $sharing_disabled = get_metadata($meta_type, $object_id, $meta_key, $single);
-
                 if ($sharing_disabled[0] != 1) {
             ?> 
-
               <a class="action" href="<?php the_permalink(); ?>#comments">
                 <i class="icon-comment"></i> <?php comments_number('0', '1', '%'); ?>
               </a>  

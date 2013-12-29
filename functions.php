@@ -33,7 +33,11 @@ wp_enqueue_script('respond', get_stylesheet_directory_uri() . '/assets/js/respon
 }
 add_action( 'wp_enqueue_scripts', 'adp_scripts' );
 
-
+function tweakjp_custom_twitter_site( $og_tags ) {
+	$og_tags['twitter:site'] = '@brunoamaral';
+	return $og_tags;
+}
+add_filter( 'jetpack_open_graph_tags', 'tweakjp_custom_twitter_site', 11 );
 
 
 // navigation menu

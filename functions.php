@@ -184,7 +184,7 @@ function adp_navigation(){
               <i class="icon-reorder icon-large"></i>
             </button>
             	<div class="collapse navbar-collapse navbar-ex1-collapse">
-              		<div class="col-sm-8 col-sm-offset-4">
+              		<div class="col-sm-16 col-sm-offset-0">
 
                             <?php 
                                 $args = array(
